@@ -1,12 +1,14 @@
-
-import './App.css'
-
-function App() {
+import React from 'react';
+import Navbar from './Components/Navbar'; 
+import HeroSection from './Components/HeroSection';
+import Meetings from './Components/Meetings';
+const App = () => {
   return (
-    <h1 className='text-3xl font-bold underline'>
-      Hello, World
-    </h1>
-  )
-}
+    <>
+      <HeroSection />
+      <Meetings />
+    </>
+  );
+};
 
 export default App
