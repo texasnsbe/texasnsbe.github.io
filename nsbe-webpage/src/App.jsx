@@ -1,16 +1,21 @@
 import React from 'react';
-import Navbar from './Components/Navbar'; 
-import HeroSection from './Components/Navbar';
+import Navbar from './Components/Navbar';
 import Meetings from './Components/Meetings';
 import GoogleCal from './Components/GoogleCal';
-import LeaderSection from './Components/Officers';
+import HeroSect from './Components/HeroSect';
+import EventPhotos from './Components/EventPhotos';
+import PayDues from './Components/PayDues';
+import Footer from './Components/Footer';
 const App = () => {
   return (
     <>
-      <HeroSection />
+      <Navbar />
+      <HeroSect/>
+      <EventPhotos />
       <GoogleCal />
       <Meetings />
-      <LeaderSection />
+      <PayDues />
+      <Footer />
     </>
   );
 };

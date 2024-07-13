@@ -70,11 +70,11 @@ const officers = [
     // More people...
   ]
   
-  export default function LeaderSection() {
+  export default function Officers() {
     return (
       <>
       {top_v.map((chairperson) => (
-      <div className="bg-white py-24 sm:py-32">
+      <div className="bg-white py-24 sm:py-16">
         <h1 className="mx-auto max-w-7xl px-6 lg:px-8 text-3xl mb-10 font-bold tracking-tight text-gray-900 sm:text-7xl">{chairperson.role.zone}</h1>
         <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
           <div className="max-w-5xl w-96 mx-auto lg:max-w-none">

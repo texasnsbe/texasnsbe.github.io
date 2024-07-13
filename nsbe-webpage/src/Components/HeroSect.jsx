@@ -1,4 +1,4 @@
-export default function Header() {
+export default function HeroSect() {
     return (
       <div className="bg-white">
         <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
@@ -29,7 +29,7 @@ export default function Header() {
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
                 <a
-                  href="#"
+                  href="/about"
                   className="rounded-lg bg-[#d80e22] px-3.5 py-2.5 text-sm font-semibold text-grey shadow-900 shadow-sm hover:bg-[#9c0716] hover:text-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                 >
                   About Us
