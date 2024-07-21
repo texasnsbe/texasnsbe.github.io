@@ -9,13 +9,13 @@ import Footer from './Components/Footer';
 const App = () => {
   return (
     <>
-      <Navbar />
-      <HeroSect/>
-      <EventPhotos />
-      <GoogleCal />
-      <Meetings />
-      <PayDues />
-      <Footer />
+          <Navbar />
+          <HeroSect/>
+          <EventPhotos />
+          {/* <GoogleCal /> */}
+          <Meetings />
+          <PayDues />
+          <Footer />
     </>
   );
 };

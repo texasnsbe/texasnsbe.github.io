@@ -1,8 +1,8 @@
 export default function HeroSect() {
   return (
-    <div className="bg-white">
-      <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
-        <div className="relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+    <div className="purple-bg py-40 sm:py-8">
+      <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8 ">
+        <div className=" darkbg relative isolate overflow-hidden bg-gray-900 px-6 pt-16 sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
           <svg
             viewBox="0 0 1024 1024"
             aria-hidden="true"
@@ -16,25 +16,26 @@ export default function HeroSect() {
               </radialGradient>
             </defs>
           </svg>
-          <div className="mx-auto max-w-lg text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-            <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              Welcome to NSBE
-            </h2>
-            <h3 className="text-lg font-bold tracking-tight text-white sm:text-2xl">
-              <br />
+          <div className=" mx-auto max-w-lg text-center lg:mx-0 lg:flex-auto lg:py-20 lg:text-left">
+            <h1 className="text-6xl herostyle  text-white ">
+              Welcome to NSBE!
+            </h1>
+            <h3 className="text-lg pt-3 font-bold tracking-tight text-white sm:text-xl">
               National Society of Black Engineers
             </h3>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
-              Empowering Black Engineers around the University of Texas at Austin
+            <p className="mt-9 text-2xl leading-8 text-gray-300">
+              <span className="excelstyle">Excel. </span>
+              <span className="succeedstyle">Succeed. </span>
+              <span className="impactstyle">Impact. </span>
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
               <a
                 href="/about"
-                className="rounded-lg bg-[#d80e22] px-3.5 py-2.5 text-sm font-semibold text-grey shadow-900 shadow-sm hover:bg-[#9c0716] hover:text-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                className="buttondarkbg rounded-lg px-8 py-2.5 text-sm font-semibold hover:bg-indigo-500 hover:text-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 About Us
               </a>
-              <a href="#" className="text-sm font-semibold leading-6 text-white">
+              <a href="#" className="text-md px-3 font-semibold leading-6 text-white">
                 Our Newsletter <span aria-hidden="true">→</span>
               </a>
             </div>
@@ -45,7 +46,7 @@ export default function HeroSect() {
               src="https://i.imgur.com/wPHnHQX.jpeg"
               width={1824}
               height={1080}
-              className="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white shadow-2xl ring-1 ring-white/10"
+              className="absolute left-0 top-0 w-[57rem] max-w-none rounded-xl shadow-2xl ring-1 ring-white/10"
             />
           </div>
         </div>

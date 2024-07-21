@@ -9,11 +9,11 @@ const stats = [
 
 export default function ResourceLinks() {
     return (
-        <div className="bg-white py-56 sm:py-60">
+        <div className="purple-bg py-56 sm:py-40">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <h2 className="text-center text-6xl font-serif font-black pb-36">
+                <h1 className="text-center text-6xl headerstyle font-black pb-36">
                     Resources
-                </h2>
+                </h1>
                 <dl className="grid grid-cols-1 gap-x-8 gap-y-40 sm:grid-cols-3 text-center lg:grid-cols-3">
                     {stats.map((stat) => (
                         <a href={stat.link} key={stat.id}>

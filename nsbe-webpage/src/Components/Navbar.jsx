@@ -18,15 +18,15 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="bg-white">
+    <div className="z-50 purple-bg mb-10">
       <header className="absolute inset-x-0 top-0 z-50">
-        <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
+        <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8 navstyle">
           <div className="flex lg:flex-1">
             <Link to="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img
                 alt=""
-                src="https://i.imgur.com/ivgQ2Lp.png"
+                src="https://i.imgur.com/XwDXsvT.png"
                 className="h-15 w-auto"
               />
             </Link>
@@ -43,7 +43,7 @@ export default function Navbar() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <Link key={item.name} to={item.to} className="text-lg font-semibold leading-6 text-gray-900">
+              <Link key={item.name} to={item.to} className="text-2xl font-semibold leading-6 hover:text-[#ffea00] transition ease-in-out text-[#fff] text-300">
                 {item.name}
               </Link>
             ))}

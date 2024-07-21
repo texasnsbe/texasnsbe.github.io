@@ -1,3 +1,134 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    body {
+        background-color: #DFDBE5;
+        background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 0C6.716 0 0 6.716 0 15c8.284 0 15-6.716 15-15zM0 15c0 8.284 6.716 15 15 15 0-8.284-6.716-15-15-15zm30 0c0-8.284-6.716-15-15-15 0 8.284 6.716 15 15 15zm0 0c0 8.284-6.716 15-15 15 0-8.284 6.716-15 15-15z' fill='%238141e7' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+    }
+}
+
+.base-bg {
+    background-color: #fff;
+}
+
+.purple-bg {
+    background-color: #eee9f7df;
+}
+
+.navstyle {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    color: #000; /* Primary text color */
+    font-weight: bold; /* Bold text */
+    font-size: 2rem; /* Font size */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, .2rem .2rem 0 #000;
+    -webkit-text-fill-color: transparent ;
+    -webkit-text-stroke: 0rem;
+    -webkit-text-fill-color: #ffea00;
+}
+ .headerstyle {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    color: #000; /* Primary text color */
+    font-weight: bold; /* Bold text */
+    font-size: 7rem; /* Font size */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, .5rem .7rem 0 #000;
+    -webkit-text-fill-color: transparent ;
+    -webkit-text-stroke: .2rem;
+    -webkit-text-fill-color: #ffea00;
+}
+
+.herostyle {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    color: #000; /* Primary text color */
+    font-weight: bold; /* Bold text */
+    font-size: 7rem; /* Font size */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, .5rem .5rem 0 #000;
+    -webkit-text-fill-color: transparent ;
+    -webkit-text-stroke: .2rem;
+    -webkit-text-fill-color: #fff;
+}
+
+.subheaderstyle {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    color: #000; /* Primary text color */
+    font-weight: bold; /* Bold text */
+    font-size: 6rem; /* Font size */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, .4rem .5rem 0 #000;
+    -webkit-text-fill-color: transparent ;
+    -webkit-text-stroke: .1rem;
+    -webkit-text-fill-color: #ffea00;
+}
+
+.excelstyle {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    color: #000; /* Primary text color */
+    font-weight: bold; /* Bold text */
+    font-size: 2.5rem; /* Font size */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, .3rem .3rem 0 #000;
+    -webkit-text-fill-color: transparent ;
+    -webkit-text-stroke: .1rem;
+    -webkit-text-fill-color: #f37666;
+}
+.succeedstyle {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    color: #000; /* Primary text color */
+    font-weight: bold; /* Bold text */
+    font-size: 2.5rem; /* Font size */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, .3rem .3rem 0 #000;
+    -webkit-text-fill-color: transparent ;
+    -webkit-text-stroke: .1rem;
+    -webkit-text-fill-color: #85f366;
+}
+.impactstyle {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    color: #000; /* Primary text color */
+    font-weight: bold; /* Bold text */
+    font-size: 2.5rem; /* Font size */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, .3rem .3rem 0 #000;
+    -webkit-text-fill-color: transparent ;
+    -webkit-text-stroke: .1rem;
+    -webkit-text-fill-color: #f3f166;
+}
+
+.darkbg {
+    position: relative;
+    color: #333;
+    box-shadow: 1rem 1rem 0px #000000;
+    outline: #000000 solid .2rem;
+    border-radius: 1rem;
+    margin-bottom: .8rem;
+}
+
+.buttondarkbg {
+    position: relative;
+    color: #ffffff;
+    background-color: #4f46e5;
+    box-shadow: .5rem .5rem 0px #000000;
+    outline: #000000 solid .2rem;
+    margin-bottom: .8rem;
+}
+
+.bordered-element Link{
+    margin: 0 0 10px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.navstyle {
+    position: relative;
+    margin:1.2rem;
+    margin-bottom: 10rem;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 .2rem .2rem rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    overflow: hidden;
+}

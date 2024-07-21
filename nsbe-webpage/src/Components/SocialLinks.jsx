@@ -31,11 +31,11 @@ const socialImgs = [
 
 export default function SocialLinks() {
     return (
-      <div className="bg-white py-56 sm:py-60">
+      <div className="purple-bg py-56 sm:py-40">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h2 className="text-center text-6xl font-serif font-black pb-2">
+          <h1 className="text-center text-6xl headerstyle font-black pb-2">
             Contact Us
-          </h2>
+          </h1>
           <h2 className="text-center text-lg font-normal leading-8 text-gray-600 pb-20">
             Check out our Social Media Pages
           </h2>

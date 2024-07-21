@@ -56,7 +56,7 @@ const GoogleCalendar = () => {
   };
 
   return (
-    <div>
+    <div className="base-bg">
       {!isSignedIn ? (
         <button onClick={handleAuthClick}>Sign in with Google</button>
       ) : (

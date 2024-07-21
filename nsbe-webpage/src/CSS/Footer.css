@@ -1,8 +1,7 @@
 .footer {
-    background-color: #454545;
-    padding: 40px;
-    color: #eeeeea;
-    font-family: 'Poppins', sans-serif;
+    padding: 60px;
+    color: #000;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   .footer-content {
@@ -11,6 +10,7 @@
   
   .footer h1 {
     /* font-size: 2em; */
+    font: "Poppins", sans-serif;
     margin-bottom: 20px;
   }
   

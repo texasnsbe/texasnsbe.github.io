@@ -32,14 +32,10 @@ const socialImgs = [
 
 export default function Footer() {
   return (
-    <div className="footer">
+    <div className="purple-bg footer">
       <div className="footer-content">
-        <h1 className='text-6xl font-serif font-bold mt-6'>Get in Touch</h1>
-        <p className=''>
-          Ecosystem bootstrapping learning curve lean startup disruptive.
-          Marketing long tail disruptive agile development partner.
-        </p>
-        <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+        <h1 className='text-6xl font-semibold mb-10'>Get in Touch</h1>
+        <div className="mx-auto mt-16 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
           {socialImgs.map((socialImg) => (
             <a href={socialImg.link}>
                 <img
