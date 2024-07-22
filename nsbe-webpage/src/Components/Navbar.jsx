@@ -22,12 +22,12 @@ export default function Navbar() {
       <header className="absolute inset-x-0 top-0 z-50">
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8 navstyle">
           <div className="flex lg:flex-1">
-            <Link to="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+            <Link to="/" className="-m-1.5 p-1.5">
+              <span className="sr-only">NSBE</span>
               <img
                 alt=""
                 src="https://i.imgur.com/XwDXsvT.png"
-                className="h-15 w-auto"
+                className="h-15 w-auto transition-all hover:scale-125 duration-300 ease-out"
               />
             </Link>
           </div>
@@ -43,7 +43,7 @@ export default function Navbar() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <Link key={item.name} to={item.to} className="text-2xl font-semibold leading-6 hover:text-[#ffea00] transition ease-in-out text-[#fff] text-300">
+              <Link key={item.name} to={item.to} className="text-2xl font-semibold leading-6 hover:text-[#ffea00] transition-all hover:scale-125 duration-300 ease-out text-[#fff] text-300">
                 {item.name}
               </Link>
             ))}

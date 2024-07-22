@@ -1,6 +1,6 @@
 const imgWidth = 200
 const imgHeight = 100
-const classDef = "col-span-2 max-h-36 w-full object-contain lg:col-span-1"
+const classDef = "col-span-2 max-h-36 w-full object-contain lg:col-span-1 transition-all hover:scale-125 duration-300 ease-out"
 const socialImgs = [
     {
         name: "LinkedIn",
@@ -33,7 +33,7 @@ export default function SocialLinks() {
     return (
       <div className="purple-bg py-56 sm:py-40">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h1 className="text-center text-6xl headerstyle font-black pb-2">
+          <h1 className="transition-all hover:scale-105 duration-300 ease-out text-center text-6xl headerstyle font-black pb-2">
             Contact Us
           </h1>
           <h2 className="text-center text-lg font-normal leading-8 text-gray-600 pb-20">

@@ -137,7 +137,7 @@ export default function Meetings() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-3xl subheaderstyle text-gray-900 sm:text-7xl">Upcoming...</h2>
+          <h2 className="text-3xl subheaderstyle text-gray-900 sm:text-7xl transition-all hover:scale-105 duration-300 ease-out">Upcoming...</h2>
           <p className="mt-2 text-lg leading-8 text-gray-600 border-b border-gray-200 mx-auto pb-5">
             Check out any events or opportunities you don't want to miss.
           </p>
@@ -150,7 +150,7 @@ export default function Meetings() {
             <article key={post.id} className="flex max-w-xl flex-col items-start justify-between ">
               <div className="relative w-full items-center gap-y-5 lg:flex my-4 ">
                 <a href={post.href}>
-                  <img className="darkbg rounded-2xl object-cover w-96 h-60" src={post.slideImg} alt="" />
+                  <img className="darkbg rounded-2xl transition-all hover:scale-105 duration-300 ease-out object-cover w-96 h-60" src={post.slideImg} alt="" />
                 </a>
               </div>
               <div className="flex items-center gap-x-4 text-xs">
@@ -178,7 +178,7 @@ export default function Meetings() {
         </div>
 
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="mt-32 text-3xl subheaderstyle tracking-tight text-gray-900 sm:text-7xl">Recent Meetings</h2>
+          <h2 className="mt-32 text-3xl subheaderstyle tracking-tight text-gray-900 sm:text-7xl transition-all hover:scale-105 duration-300 ease-out">Recent Meetings</h2>
           <p className="mt-2 text-lg leading-8 text-gray-600 border-b border-gray-200 mx-auto pb-5">
             Check out any events or opportunities you may have missed.
           </p>
@@ -191,7 +191,7 @@ export default function Meetings() {
             <article key={post.id} className="flex max-w-xl flex-col items-start justify-between">
               <div className="relative w-full items-center gap-y-5 lg:flex my-4 ">
                 <a href={post.href}>
-                  <img className="darkbg rounded-2xl w-full h-auto"src={post.slideImg} alt="" />
+                  <img className="darkbg transition-all hover:scale-105 duration-300 ease-out rounded-2xl w-full h-auto"src={post.slideImg} alt="" />
                 </a>
               </div>
               <div className="flex items-center gap-x-4 text-xs">
@@ -228,7 +228,7 @@ export default function Meetings() {
             <article key={post.id} className="flex max-w-xl flex-col items-start justify-between">
               <div className="relative w-full items-center gap-y-5 lg:flex my-4 ">
                 <a href={post.href}>
-                  <img className="darkbg rounded-2xl" src={post.slideImg} alt="" />
+                  <img className="darkbg rounded-2xl transition-all hover:scale-105 duration-300 ease-out object-cover w-full h-auto" src={post.slideImg} alt="" />
                 </a>
               </div>
               <div className="flex items-center gap-x-4 text-xs">
