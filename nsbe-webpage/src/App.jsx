@@ -12,7 +12,7 @@ const App = () => {
           <Navbar />
           <HeroSect/>
           <EventPhotos />
-          {/* <GoogleCal /> */}
+          <GoogleCal />
           <Meetings />
           <PayDues />
           <Footer />

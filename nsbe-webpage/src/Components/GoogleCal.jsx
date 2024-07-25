@@ -1,79 +1,26 @@
-import React, { useEffect, useState } from "react";
-import { gapi } from "gapi-script";
-
-const CLIENT_ID = "582500803390-7a4vdul5lad6utict422j8ul42uhvccd.apps.googleusercontent.com";
-const API_KEY = "AIzaSyAm9oo-x2acHu2_bxlXwV6ykYiuKi0hoE4";
-const DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"];
-const SCOPES = "https://www.googleapis.com/auth/calendar.events.readonly";
-
-const GoogleCalendar = () => {
-  const [isSignedIn, setIsSignedIn] = useState(false);
-  const [events, setEvents] = useState([]);
-
-  useEffect(() => {
-    function start() {
-      gapi.client.init({
-        apiKey: API_KEY,
-        clientId: CLIENT_ID,
-        discoveryDocs: DISCOVERY_DOCS,
-        scope: SCOPES,
-      }).then(() => {
-        // Listen for sign-in state changes.
-        gapi.auth2.getAuthInstance().isSignedIn.listen(setIsSignedIn);
-
-        // Handle the initial sign-in state.
-        setIsSignedIn(gapi.auth2.getAuthInstance().isSignedIn.get());
-
-        if (gapi.auth2.getAuthInstance().isSignedIn.get()) {
-          listUpcomingEvents();
-        }
-      });
-    }
-
-    gapi.load("client:auth2", start);
-  }, []);
-
-  const handleAuthClick = () => {
-    gapi.auth2.getAuthInstance().signIn();
-  };
-
-  const handleSignOutClick = () => {
-    gapi.auth2.getAuthInstance().signOut();
-  };
-
-  const listUpcomingEvents = () => {
-    gapi.client.calendar.events.list({
-      calendarId: "primary",
-      timeMin: new Date().toISOString(),
-      showDeleted: false,
-      singleEvents: true,
-      maxResults: 10,
-      orderBy: "startTime",
-    }).then(response => {
-      const events = response.result.items;
-      setEvents(events);
-    });
-  };
-
+export default function GoogleCal() {
   return (
-    <div className="base-bg">
-      {!isSignedIn ? (
-        <button onClick={handleAuthClick}>Sign in with Google</button>
-      ) : (
-        <>
-          <button onClick={handleSignOutClick}>Sign out</button>
-          <h2>Upcoming Events</h2>
-          <ul>
-            {events.map(event => (
-              <li key={event.id}>
-                {event.summary} ({event.start.dateTime || event.start.date})
-              </li>
-            ))}
-          </ul>
-        </>
-      )}
+    <>
+     <div className="purple-bg py-16 sm:py-16">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-2xl lg:mx-0">
+          <h2 className="text-3xl headerstyle subheaderstyle text-gray-900 sm:text-7xl transition-all hover:scale-105 duration-300 ease-out">Calendar</h2>
+          <p className="mt-2 text-lg tracking-wider leading-8 text-gray-600 border-b border-gray-200 mx-auto pb-10">
+            Never miss an event, everything is on our calendar!
+          </p>
+        </div>
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 flex justify-center">
+        <iframe
+        src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FChicago&bgcolor=%23eee9f7&mode=MONTH&showPrint=0&showTitle=0&showTz=0&src=dGV4YXNuc2JldGVsZWNvbW11bmljYXRpb25zQGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%2333B679&color=%230B8043"
+        style={{width: "75%", minHeight: "600px" }}
+        className="darkbg transition-all hover:scale-105 duration-300 ease-out"
+        height="600"
+        frameBorder="0"
+        scrolling="no"
+        />
+      </div>
+      </div>
     </div>
+    </>
   );
 };
-
-export default GoogleCalendar;

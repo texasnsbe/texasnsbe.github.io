@@ -91,7 +91,7 @@ const officers = [
               person.id == chairperson.role.zone ? (
                 <li key={person.name}>
                   <div className=" flex items-center gap-x-6 transition-all hover:scale-110 duration-300 ease-out">
-                    <img alt="" src={person.imageUrl} className="h-24 w-auto rounded-full" />
+                    <img alt="" src={person.imageUrl} className="h-24 w-auto rounded-full darkbg" />
                     <div>
                       <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
                       <p className="text-sm font-semibold leading-6 text-indigo-600">{person.role}</p>

@@ -15,7 +15,7 @@ const image = [
 export default function EventPhotos() {
     return (
         <>
-            <div className="purple-bg pt-36 pb-12 sm:pt-4">
+            <div className="purple-bg pt-4 pb-4 sm:pt-4">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
                         <div className="grid grid-cols-1 gap-y-16 gap-x-8 lg:grid-cols-2 lg:gap-x-16">
