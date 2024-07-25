@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+    scroll-behavior:smooth;
+}
+
 @layer base {
     body {
         background-color: #DFDBE5;
@@ -34,7 +38,7 @@
     color: #000; /* Primary text color */
     font-weight: bold; /* Bold text */
     font-size: 7rem; /* Font size */
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, .5rem .7rem 0 #000;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, .7rem .7rem 0 #000;
     -webkit-text-fill-color: transparent ;
     -webkit-text-stroke: .2rem;
     -webkit-text-fill-color: #ffea00;
