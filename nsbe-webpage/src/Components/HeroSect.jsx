@@ -35,9 +35,9 @@ export default function HeroSect() {
               >
                 About Us
               </a>
-              <a href="#" className="transition-all tracking-wider hover:scale-105 text-md px-3 font-semibold leading-6 text-white">
+              {/* <a href="#" className="transition-all tracking-wider hover:scale-105 text-md px-3 font-semibold leading-6 text-white">
                 Our Newsletter <span aria-hidden="true">→</span>
-              </a>
+              </a> */}
             </div>
           </div>
           <div className="relative mt-16 h-80 lg:mt-8">

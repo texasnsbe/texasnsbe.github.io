@@ -1,18 +1,10 @@
 'use client'
-
 import React from 'react'
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom'
-
-const navigation = [
-  { name: 'Home', to: '/' },
-  { name: 'About', to: '/about' },
-  { name: 'Contact', to: '/contact' },
-  { name: 'Resources', to: '/resources' },
-  // { name: 'Opportunites', to: '/opportunities' },
-]
+import navigation from '../assets/navigation.js'
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)

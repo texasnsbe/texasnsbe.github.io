@@ -1,23 +1,4 @@
-import { CheckBadgeIcon } from '@heroicons/react/20/solid'
-
-const features = [
-  {
-    name: 'FREE MERCH!',
-    description:
-      'Every member gets free merch!',
-    icon: CheckBadgeIcon,
-  },
-  {
-    name: 'MEMBERSHIP PRIORITY!',
-    description: 'When ever applying to any scholarships, confrences: AfroTech & NSBE Nationals, and leaddship positions, your application will be prioritized. ',
-    icon: CheckBadgeIcon,
-  },
-  {
-    name: 'FOOD!',
-    description: 'At the end of every meeting, be the first ones to eat... if not, we maye be all out :(',
-    icon: CheckBadgeIcon,
-  },
-]
+import due_benefits from '../assets/due_benefits.js'
 
 export default function PayDues() {
   return (
@@ -33,7 +14,7 @@ export default function PayDues() {
                 Paying your dues enables <span className="text-black font-semibold text-600">NSBE to give back</span>  to our community through various socials, meetings, and more!
               </p>
               <dl className="mt-10 max-w-xl space-y-5 text-base tracking-wider leading-7 text-gray-600 lg:max-w-none">
-                {features.map((feature) => (
+                {due_benefits.map((feature) => (
                   <div key={feature.name} className="relative pl-9">
                     <dt className="inline font-semibold text-gray-900">
                       <feature.icon aria-hidden="true" className="absolute left-1 top-1 h-6 w-auto text-indigo-600" />
