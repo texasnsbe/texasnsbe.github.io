@@ -50,11 +50,7 @@ Before you begin, ensure you have the following installed:
 1. **Start the Development Server**:
     Using npm:
     ```bash
-    npm start
-    ```
-    Or using yarn:
-    ```bash
-    yarn start
+    npm run dev
     ```
 
     The app will be available at `http://localhost:5173`.
