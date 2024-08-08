@@ -1,5 +1,4 @@
 # NSBE at the University of Texas at Austin
-[View Page](https://texasnsbe.github.io/)
 
 ## Overview
 
