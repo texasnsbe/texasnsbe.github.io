@@ -6,10 +6,12 @@ import Footer from '../Components/Footer';
 const AboutApp = () => {
   return (
     <>
-      <Navbar />
-      <AboutDetails />
-      <Officers />
-      <Footer />
+      <div className='flex flex-col'>
+        <Navbar />
+        <AboutDetails />
+        <Officers />
+        <Footer />
+      </div>
     </>
   );
 };

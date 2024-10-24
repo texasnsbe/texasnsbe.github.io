@@ -9,7 +9,7 @@ const features = [
     },
     {
       name: 'MEMBERSHIP PRIORITY!',
-      description: 'When ever applying to any scholarships, confrences: AfroTech & NSBE Nationals, and leaddship positions, your application will be prioritized. ',
+      description: 'Whenever applying to any scholarships, confrences: AfroTech & NSBE Nationals, and leadership positions, your application will be prioritized. ',
       icon: CheckBadgeIcon,
     },
     {

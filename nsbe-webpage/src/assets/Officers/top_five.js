@@ -1,35 +1,45 @@
-import nadya_harris from '../Officers/Nadya Harris.jpg'
+import nadya_harris from '../Officers/New_Officer_Photos/Nadya.jpg'
+import david_fasasi from '../Officers/New_Officer_Photos/DavidF.jpg'
+import eloghosa_eguakun from '../Officers/New_Officer_Photos/Eloghosa.jpg'
+import sulaimon_suleonosipe from '../Officers/New_Officer_Photos/Sulaimon.jpg'
+import habsa_aydid from '../Officers/New_Officer_Photos/Habsa.jpg'
+import blank_photo from '../Officers/Officer_Images/Blank Photo.jpg'
 
 const topFive = [
   {
     name: 'Nadya Harris',
-    role: { name: 'President', zone: "Main Zone"},
+    role: { name: 'President', zone: "President" },
+    linkedin: "https://www.linkedin.com/in/nadyaharris/",
     imageUrl:
       nadya_harris,
   },
   {
-  name: 'Selasie Tse',
+  name: 'Sulaimon Sule-Onosipe',
   role: { name: 'Vice President', zone: "Membership Zone" },
+  linkedin: "https://www.linkedin.com/in/sulaimonsule-onosipe/",
   imageUrl:
-    'https://i.imgur.com/HRo9wbx.jpeg',
+  sulaimon_suleonosipe,
   },
   {
-    name: 'Bisaam',
+    name: 'Eloghosa Eguakun',
     role: { name: 'Secretary', zone: "Communications Zone" },
+    linkedin: "https://www.linkedin.com/in/eloghosa-eguakun-460171214/",
     imageUrl:
-      'https://i.imgur.com/dkI8U4j.jpeg',
+      eloghosa_eguakun,
     },
     {
-      name: 'Nick',
+      name: 'David Fasasi',
       role: { name: 'Treasurer', zone: "Finance Zone" },
+      linkedin: "https://www.linkedin.com/in/david-fasasi-47907a24b/",
       imageUrl:
-        'https://i.imgur.com/nyH2k1a.jpeg',
+        david_fasasi,
       },
       {
-        name: 'Patrick',
-        role: { name: 'Public Fun', zone: "Programs Zone" },
+        name: 'Habsa Aydid',
+        role: { name: 'Programs Chair', zone: "Programs Zone" },
+        linkedin: "https://www.linkedin.com/in/habsa-aydid/",
         imageUrl:
-          'https://i.imgur.com/QIvzIye.jpeg',
+          habsa_aydid,
         },
 ]
 

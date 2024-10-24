@@ -12,20 +12,38 @@ import officers from '../assets/Officers/officers.js'
             <div className="h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-auto darkbg ">
               <img className="object-cover transition-all hover:scale-110 duration-300 ease-out " src={chairperson.imageUrl} alt="" />
             </div>
-            <h2 className="mt-10 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{chairperson.name}</h2>
-            <p className="mt-1 text-lg text-gray-600 font-semibold">
+            <h2 className="mt-10 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl startl">{chairperson.name}</h2>
+            <p className="mt-1 text-4xl text-rose-800 font-semibold start-topv-title">
               {chairperson.role.name}
             </p>
+            <a href={chairperson.linkedin}>
+                        <img
+                          alt=""
+                          src="https://i.imgur.com/KJP9wXt.png"
+                          width="60px"
+                          height=""
+                          className='mt-4'
+                        />
+                      </a>
           </div>
           <ul role="list" className="sm:ml-16 grid gap-x-3 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
             {officers.map((person) => (
               person.id == chairperson.role.zone ? (
                 <li key={person.name}>
                   <div className=" flex items-center gap-x-6 transition-all hover:scale-110 duration-300 ease-out">
-                    <img alt="" src={person.imageUrl} className="h-24 w-auto rounded-full darkbg" />
+                    <img alt="" src={person.imageUrl} className="h-28 w-auto rounded-full darkbg" />
                     <div>
-                      <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
-                      <p className="text-sm font-semibold leading-6 text-indigo-600">{person.role}</p>
+                      <h3 className="text-base font-semibold leading-7 tracking-tight text-stone-100 startm">{person.name}</h3>
+                      <p className="text-lg font-semibold leading-6 text-yellow-400 start-title">{person.role}</p>
+                      <a href={person.linkedin}>
+                        <img
+                          alt=""
+                          src="https://i.imgur.com/KJP9wXt.png"
+                          width="30px"
+                          height=""
+                          className='mt-2'
+                        />
+                      </a>
                     </div>
                   </div>
                 </li>

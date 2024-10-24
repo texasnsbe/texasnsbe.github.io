@@ -16,9 +16,9 @@ html{
 
 @layer base {
     body {
-        background-color: #DFDBE5;
-        background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 0C6.716 0 0 6.716 0 15c8.284 0 15-6.716 15-15zM0 15c0 8.284 6.716 15 15 15 0-8.284-6.716-15-15-15zm30 0c0-8.284-6.716-15-15-15 0 8.284 6.716 15 15 15zm0 0c0 8.284-6.716 15-15 15 0-8.284 6.716-15 15-15z' fill='%238141e7' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
-    }
+        background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 0C6.716 0 0 6.716 0 15c8.284 0 15-6.716 15-15zM0 15c0 8.284 6.716 15 15 15 0-8.284-6.716-15-15-15zm30 0c0-8.284-6.716-15-15-15 0 8.284 6.716 15 15 15zm0 0c0 8.284-6.716 15-15 15 0-8.284 6.716-15 15-15z' fill='%23b9730f' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
 }
 
 .base-bg {
@@ -26,7 +26,13 @@ html{
 }
 
 .purple-bg {
-    background-color: #eee9f7df;
+    background-color: #bf5600cd
+
+    ;
+}
+
+p {
+    size: 5rem;
 }
 
 .navstyle {
@@ -37,9 +43,61 @@ html{
     font-size: 2rem; /* Font size */
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, .2rem .2rem 0 #000;
     -webkit-text-fill-color: transparent ;
-    -webkit-text-stroke: 0rem;
-    -webkit-text-fill-color: #ffea00;
+    -webkit-text-stroke:0rem;
+    -webkit-text-fill-color: #bf5600
+
+    ;
 }
+
+.startl {
+    font-family: 'Poppins';
+    position: relative;
+    color: #000; /* Primary text color */
+    font-weight: bold; /* Bold text */
+    font-size: 1.5rem; /* Font size */
+    text-shadow: -.5px -.5px 0 #000, .5px -.5px 0 #000, -.5px .5px 0 #000, .23rem .23rem 0 #000;
+    -webkit-text-fill-color: transparent ;
+    -webkit-text-stroke: .1rem;
+    -webkit-text-fill-color: #fff;
+}
+
+.startm {
+    font-family: 'Poppins';
+    position: relative;
+    color: #000; /* Primary text color */
+    font-weight: bold; /* Bold text */
+    font-size: 1.5rem; /* Font size */
+    text-shadow: -.5px -.5px 0 #000, .5px -.5px 0 #000, -.5px .5px 0 #000, .18rem .18rem 0 #000;
+    -webkit-text-fill-color: transparent ;
+    -webkit-text-stroke: .04rem;
+    -webkit-text-fill-color: #fff;
+}
+
+.start-topv-title {
+    font-family: 'Poppins';
+    position: relative;
+    color: #000; /* Primary text color */
+    font-weight: bold; /* Bold text */
+    font-size: 2.5rem; /* Font size */
+    text-shadow: -.5px -.5px 0 #000, .5px -.5px 0 #000, -.5px .5px 0 #000, .23rem .23rem 0 #000;
+    -webkit-text-fill-color: transparent ;
+    -webkit-text-stroke: .1rem;
+    -webkit-text-fill-color: #ffef15;
+}
+
+.start-title {
+    font-family: 'Poppins';
+    position: relative;
+    color: #000; /* Primary text color */
+    font-weight: bold; /* Bold text */
+    font-size: 1.15rem; /* Font size */
+    text-shadow: -.5px -.5px 0 #000, .5px -.5px 0 #000, -.5px .5px 0 #000, .18rem .18rem 0 #000;
+    -webkit-text-fill-color: transparent ;
+    -webkit-text-stroke: .02rem;
+    -webkit-text-fill-color: #ffef15;
+}
+
+
  .headerstyle {
     font-family: 'Poppins';
     position: relative;
@@ -49,7 +107,7 @@ html{
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, .7rem .7rem 0 #000;
     -webkit-text-fill-color: transparent ;
     -webkit-text-stroke: .2rem;
-    -webkit-text-fill-color: #ffea00;
+    -webkit-text-fill-color: #fff;
 }
 
 .herostyle {
@@ -61,7 +119,13 @@ html{
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, .5rem .5rem 0 #000;
     -webkit-text-fill-color: transparent ;
     -webkit-text-stroke: .2rem;
-    -webkit-text-fill-color: #fff;
+    -webkit-text-fill-color: #ffffff
+
+    ;
+}
+
+p {
+    color: #fff;
 }
 
 .subheaderstyle {
@@ -73,7 +137,9 @@ html{
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, .4rem .5rem 0 #000;
     -webkit-text-fill-color: transparent ;
     -webkit-text-stroke: .1rem;
-    -webkit-text-fill-color: #ffea00;
+    -webkit-text-fill-color: #ffffff
+
+    ;
 }
 
 .excelstyle {
@@ -98,6 +164,7 @@ html{
     -webkit-text-stroke: .1rem;
     -webkit-text-fill-color: #85f366;
 }
+
 .impactstyle {
     font-family: 'Poppins';
     position: relative;
@@ -122,7 +189,7 @@ html{
 .buttondarkbg {
     position: relative;
     color: #ffffff;
-    background-color: #4f46e5;
+    background-color: #ffef15;
     box-shadow: .5rem .5rem 0px #000000;
     outline: #000000 solid .2rem;
     margin-bottom: .8rem;
@@ -140,7 +207,51 @@ html{
     margin-bottom: 10rem;
     padding: 20px;
     background-color: #ffffff;
-    box-shadow: 0 .2rem .2rem rgba(0, 0, 0, 0.3);
+    box-shadow: .4rem .5rem 0px #000000;
     border-radius: 25px;
-    overflow: hidden;
+    
 }
+
+.image-gallery {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    padding: 10px;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+  }
+  
+  .gallery-image {
+    flex-shrink: 0;
+    width: 600px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 8px;
+  }
+
+  .carousel-img {
+  
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .photo-slider {
+    /* width: 100%;
+    height: 400px; Adjust as needed */
+    
+  }
+  
+  .slider-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out; /* Smooth transition */
+  }

@@ -6,6 +6,7 @@ import HeroSect from './Components/HeroSect';
 import EventPhotos from './Components/EventPhotos';
 import PayDues from './Components/PayDues';
 import Footer from './Components/Footer';
+import DisplayPoints from './Components/DisplayPoints';
 const App = () => {
   return (
     <>
@@ -14,6 +15,7 @@ const App = () => {
           <EventPhotos />
           <GoogleCal />
           <Meetings />
+          <DisplayPoints />
           <PayDues />
           <Footer />
     </>

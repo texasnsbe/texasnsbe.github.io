@@ -1,42 +1,38 @@
 import React from 'react'
+import images from '../assets/EventPhotos/event_photos.js'
+import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
+import ImageSwapper from './ImageSwapper.jsx';
 
-const image = [
-    {
-        id: 1,
-        name: 'Woman holding a mug',
-        src: 'https://i.imgur.com/mqpwdKt.png',
-    },
-    {
-        id: 2,
-        name: 'Woman holding a mug',
-        src: 'https://i.imgur.com/YvNlQAb.png',
-    },
-]
 export default function EventPhotos() {
-    return (
+    const slideLeft = () => {
+        var slider = document.getElementById('slider');
+        slider.scrollLeft = slider.scrollLeft - 500;
+      };
+    
+      const slideRight = () => {
+        var slider = document.getElementById('slider');
+        slider.scrollLeft = slider.scrollLeft + 500;
+      };
+    
+      return (
         <>
-            <div className="purple-bg pt-4 pb-4 sm:pt-4">
-                <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                    <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-                        <div className="grid grid-cols-1 gap-y-16 gap-x-8 lg:grid-cols-2 lg:gap-x-16">
-                            <div className="h-max overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-auto transition-all hover:scale-105 duration-300 ease-out">
-                                <img
-                                    src={image[0].src}
-                                    alt={image[0].name}
-                                    className="h-max w-full object-cover object-center"
-                                />
-                            </div>
-                            <div className="h-max overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-auto transition-all hover:scale-105 duration-300 ease-out">
-                                <img
-                                    src={image[1].src}
-                                    alt={image[1].name}
-                                    className="h-max w-full object-cover object-center"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div className='relative flex items-center purple-bg pb-5'>
+            <MdChevronLeft className='opacity-50 cursor-pointer hover:opacity-100' onClick={slideLeft} size={40} />
+            <div
+              id='slider'
+              className='w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide'
+            >
+              {images.map((item) => (
+                <img
+                  className='carousel-img w-[650px] h-[400px] darkbg object-cover inline-block m-4 cursor-pointer'
+                  src={item}
+                  alt='/'
+                />
+                
+              ))}
             </div>
+            <MdChevronRight className='opacity-50 cursor-pointer hover:opacity-100' onClick={slideRight} size={40} />
+          </div>
         </>
-    )
+      );
 }

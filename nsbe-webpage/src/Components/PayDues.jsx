@@ -1,4 +1,5 @@
 import due_benefits from '../assets/due_benefits.js'
+import tshirt from '../assets/Tshirt.jpg'
 
 export default function PayDues() {
   return (
@@ -7,32 +8,29 @@ export default function PayDues() {
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
-              <h2 className="text-base font-semibold tracking-wider leading-7 text-indigo-600">Due Payment</h2>
-              <p className="mt-2 text-3xl headerstyle  text-gray-900 sm:text-7xl transition-all hover:scale-105 duration-300 ease-out">Haven't Paid Your Dues?</p>
-              <p className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">$20</p>
-              <p className="mt-6 text-lg leading-8 tracking-wider text-gray-600">
-                Paying your dues enables <span className="text-black font-semibold text-600">NSBE to give back</span>  to our community through various socials, meetings, and more!
-              </p>
-              <dl className="mt-10 max-w-xl space-y-5 text-base tracking-wider leading-7 text-gray-600 lg:max-w-none">
+              <h2 className="text-lg font-semibold tracking-wider leading-7 text-black">Due Payment</h2>
+              <p className="mt-2 text-3xl subheaderstyle  text-gray-900 sm:text-7xl transition-all hover:scale-105 duration-300 ease-out">Haven't Paid Your Dues?</p>
+              <dl className="mt-10 max-w-xl space-y-5 text-black border-l-8 rounded-2xl darkbg border-orange-700 p-7 bg-orange-50 tracking-wider leading-7 lg:max-w-none">
+              <p className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">$25</p>
                 {due_benefits.map((feature) => (
                   <div key={feature.name} className="relative pl-9">
-                    <dt className="inline font-semibold text-gray-900">
-                      <feature.icon aria-hidden="true" className="absolute left-1 top-1 h-6 w-auto text-indigo-600" />
+                    <dt className="inline font-semibold text-black">
+                      <feature.icon aria-hidden="true" className="absolute left-1 top-1 h-6 w-auto text-orange-700" />
                       {feature.name}
                     </dt>{' '}
-                    <dd className="inline">{feature.description}</dd>
+                    <dd className="inline text text-black">{feature.description}</dd>
                   </div>
                 ))}
-                <a href="#" class="mt-10 block w-fit rounded-md bg-indigo-600 px-16 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-all hover:scale-105 duration-300 ease-out buttondarkbg">Pay Now</a>
+                <a href="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc2rP4CcGY-RkZGd3M3lASSjejy1TgNu-l2nUIaqOjCXUIicw/viewform?usp=sf_link&pli=1" class="mt-14 block w-fit rounded-md bg-orange-700 startm px-12 py-4 text-center text-sm font-semibold text-white shadow-sm hover:bg-orange-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 transition-all hover:scale-105 duration-300 ease-out buttondarkbg">Pay Now</a>
               </dl>
             </div>
           </div>
           <img
             alt="T-shirt screenshot"
-            src="https://i.imgur.com/O1p3f0N.png"
+            src={tshirt}
             width={2432}
             height={1442}
-            className="darkbg w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0 transition-all hover:scale-105 duration-300 ease-out"
+            className="darkbg mt-10 w-[48rem] rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0 transition-all hover:scale-105 duration-300 ease-out"
           />
         </div>
       </div>
