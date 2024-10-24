@@ -15,28 +15,28 @@ const topFive = [
   },
   {
   name: 'Sulaimon Sule-Onosipe',
-  role: { name: 'Vice President', zone: "Membership Zone" },
+  role: { name: 'Vice President', zone: "Membership" },
   linkedin: "https://www.linkedin.com/in/sulaimonsule-onosipe/",
   imageUrl:
   sulaimon_suleonosipe,
   },
   {
     name: 'Eloghosa Eguakun',
-    role: { name: 'Secretary', zone: "Communications Zone" },
+    role: { name: 'Secretary', zone: "Communications" },
     linkedin: "https://www.linkedin.com/in/eloghosa-eguakun-460171214/",
     imageUrl:
       eloghosa_eguakun,
     },
     {
       name: 'David Fasasi',
-      role: { name: 'Treasurer', zone: "Finance Zone" },
+      role: { name: 'Treasurer', zone: "Finance" },
       linkedin: "https://www.linkedin.com/in/david-fasasi-47907a24b/",
       imageUrl:
         david_fasasi,
       },
       {
         name: 'Habsa Aydid',
-        role: { name: 'Programs Chair', zone: "Programs Zone" },
+        role: { name: 'Programs', zone: "Programs" },
         linkedin: "https://www.linkedin.com/in/habsa-aydid/",
         imageUrl:
           habsa_aydid,

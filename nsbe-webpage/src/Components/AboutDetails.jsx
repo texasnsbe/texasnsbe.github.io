@@ -11,12 +11,12 @@ const image = [
 ]
 export default function AboutDetails() {
     return (
-        <>
-            <div className="purple-bg pt-56 sm:pt-40 pb-48">
+        <div>
+            <div className="purple-bg pt-44">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className=" mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
                         <div className="grid grid-cols-1 gap-y-16 gap-x-8 lg:grid-cols-2 lg:gap-x-16 mb-auto">
-                            <div className="h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-auto darkbg">
+                            <div className=" overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-auto darkbg">
                                 <img
                                     src={image[0].src}
                                     alt={image[0].name}
@@ -27,7 +27,7 @@ export default function AboutDetails() {
                                 <h2 className="text-center text-3xl font-normal leading-8 mt-1 tracking-wider text-black mx-auto pt-5 ">
                                     Who Are We?
                                 </h2>
-                                <h1 className='ml-5 text-6xl headerstyle font-black pb-10 transition-all hover:scale-105 duration-300 ease-out'>About Us</h1>
+                                <h1 className='ml-5 text-6xl text-center headerstyle font-black pb-10 transition-all hover:scale-105 duration-300 ease-out'>About Us</h1>
                                 <p className='text-black text-lg border-l-8 rounded-2xl darkbg border-orange-700 p-5 bg-orange-50 tracking-wide font-medium'>
                                     <span className='text-2xl inline-block rounded-md pl-2 pr-1 startl'>O</span>ur mission is to increase the number of culturally responsible Black engineers excelling academically, succeeding professionally, and positively impacting the community. We offer resources for academic excellence, professional development, leadership, and mentorship. Through study groups, career fairs, social events, and community service projects, we create an inclusive environment for students to thrive and connect.
                                 </p>
@@ -37,6 +37,6 @@ export default function AboutDetails() {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }

@@ -4,6 +4,7 @@ import plugin from "tailwindcss/plugin";
 
 export default {
   content: [
+    './src/**/*.{html,js}',
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
     "./public/assets/**/*.{js,ts,jsx,tsx}",

@@ -119,9 +119,7 @@ p {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, .5rem .5rem 0 #000;
     -webkit-text-fill-color: transparent ;
     -webkit-text-stroke: .2rem;
-    -webkit-text-fill-color: #ffffff
-
-    ;
+    -webkit-text-fill-color: #ffffff;
 }
 
 p {
@@ -230,10 +228,6 @@ p {
     border-radius: 8px;
   }
 
-  .carousel-img {
-  
-}
-
 .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }
@@ -242,12 +236,6 @@ p {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
   }
-
-  .photo-slider {
-    /* width: 100%;
-    height: 400px; Adjust as needed */
-    
-  }
   
   .slider-image {
     width: 100%;
@@ -255,3 +243,155 @@ p {
     object-fit: cover;
     transition: opacity 1s ease-in-out; /* Smooth transition */
   }
+
+  @media (max-width: 640px) {
+    .gallery-image {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-image {
+        width: 33.333%;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .about-padding{
+        padding-top: 12rem;
+    }
+
+
+    .hero-padding{
+        padding-bottom: 10%;
+    }
+
+    .headerstyle {
+        font-size: 6rem;
+    }
+
+    .subheaderstyle {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .about-padding{
+        padding-top: 12rem;
+    }
+
+    .hero-padding{
+        padding-bottom: 8%;
+    }
+
+    .navstyle {
+        font-size: 2.5rem;
+    }
+
+    .startl {
+        font-size: 3rem;
+    }
+
+    .startm {
+        font-size: 1.5rem;
+    }
+
+    .start-topv-title {
+        font-size: 3rem;
+    }
+
+    .headerstyle {
+        font-size: 6rem;
+    }
+
+    .subheaderstyle {
+        font-size: 5rem;
+    }
+
+    .impactstyle, .succeedstyle, .excelstyle {
+        font-size: 2.5rem;
+    }
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 640px) {
+
+    .about-padding{
+        padding-top: 28rem;
+    }
+    .herostyle{
+        font-size: 5rem;
+    }
+
+    .hero-padding{
+        padding-bottom: 8%;
+    }
+
+    .navstyle {
+        font-size: 2rem;
+    }
+
+    .startl {
+        font-size: 2rem;
+    }
+
+    .startm {
+        font-size: 1.5rem;
+    }
+
+    .start-topv-title {
+        font-size: 3rem;
+    }
+
+    .headerstyle {
+        font-size: 5rem;
+    }
+
+    .subheaderstyle {
+        font-size: 3rem;
+    }
+
+    .impactstyle, .succeedstyle, .excelstyle {
+        font-size: 1.8rem;
+    }
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 320px) {
+    .about-padding{
+        padding-top: 28rem;
+    }
+    .herostyle{
+        font-size: 4.5rem;
+    }
+
+    .navstyle {
+        font-size: 1.6rem;
+    }
+
+    .startl {
+        font-size: 1.6rem;
+    }
+
+    .startm {
+        font-size: 1.2rem;
+    }
+
+    .start-topv-title {
+        font-size: 2rem;
+    }
+
+    .headerstyle {
+        font-size: 4.5rem;
+    }
+
+    .subheaderstyle {
+        font-size: 2.5rem;
+    }
+
+    .impactstyle, .succeedstyle, .excelstyle {
+        font-size: 1.4rem;
+    }
+}

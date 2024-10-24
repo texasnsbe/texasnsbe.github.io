@@ -13,7 +13,7 @@ export default function DisplayPoints() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8 flex justify-center">
           <iframe
             src="https://script.google.com/macros/s/AKfycbyNfzaTwzEEDc45ZqGRdDVbjS2XCpv2cn8KLFxG_rgPKd8Qt9EH5mYJWWTsO92d0qaD/exec"
-            style={{width: "75%", minHeight: "600px" }}
+            style={{width: "100%", minHeight: "600px" }}
             className="darkbg transition-all hover:scale-105 duration-300 ease-out"
             height="600"
             frameBorder="0"

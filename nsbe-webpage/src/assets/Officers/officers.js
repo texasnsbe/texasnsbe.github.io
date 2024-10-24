@@ -22,7 +22,7 @@ import joshua_chikosha from '../Officers/New_Officer_Photos/Joshua.jpg'
 
 const officers = [
   {
-    id: "Finance Zone",
+    id: "Finance",
     name: 'Daniel Akinola',
     role: 'Finance Chair',
     linkedin: "https://www.linkedin.com/in/danielaakinola/",
@@ -30,7 +30,7 @@ const officers = [
       daniel_akinola,
   },
 {
-    id: "Communications Zone",
+    id: "Communications",
     name: 'Kevin Uduji',
     role: 'Telecommunications',
     linkedin: "https://www.linkedin.com/in/kevinuduji/",
@@ -38,7 +38,7 @@ const officers = [
       kevin_uduji,
   },
   {
-    id: "Communications Zone",
+    id: "Communications",
     name: 'Angel Achar',
     role: 'Public Relations',
     linkedin: "https://www.linkedin.com/in/angel-a-0a2766284/",
@@ -46,7 +46,7 @@ const officers = [
       angel_achar,
   },
   {
-    id: "Programs Zone",
+    id: "Programs",
     name: 'David Udoh',
     role: 'Athletics Chair',
     linkedin: "https://www.linkedin.com/in/davidudoh/",
@@ -54,7 +54,7 @@ const officers = [
       david_udoh,
   },
   {
-    id: "Finance Zone",
+    id: "Finance",
     name: 'Sidney Abdullah',
     role: 'Corporate Liason',
     linkedin: "https://www.linkedin.com/in/sidney-abdullah-b4bb80238/",
@@ -63,7 +63,7 @@ const officers = [
   },
 
   {
-    id: "Membership Zone",
+    id: "Membership",
     name: 'Prince A Fofanah',
     role: 'Professional Development',
     linkedin: "https://www.linkedin.com/in/prince-alvin-fofanah-142090217/",
@@ -71,7 +71,7 @@ const officers = [
       prince_fofanah,
   },
 {
-  id: "Communications Zone",
+  id: "Communications",
   name: 'Jasmin Addy',
   role: 'Cockrell Relations',
   linkedin: "https://www.linkedin.com/in/jasminaddy/",
@@ -79,7 +79,7 @@ const officers = [
     jasmin_addy,
 },
 {
-  id: "Membership Zone",
+  id: "Membership",
   name: 'Damion Norment',
   role: 'Membership Chair',
   linkedin: "https://www.linkedin.com/in/damion-norment-/",
@@ -87,7 +87,7 @@ const officers = [
     damion_norment,
 },
 {
-  id: "Communications Zone",
+  id: "Communications",
   name: 'Ganiat Ogidan',
   role: 'Historian',
   linkedin: "https://www.linkedin.com/in/ganiat-ogidan/",
@@ -95,7 +95,7 @@ const officers = [
     ganiat_ogidan,
 },
 {
-  id: "Membership Zone",
+  id: "Membership",
   name: 'Ngozi Onya',
   role: 'BWISE Coordinator ',
   linkedin: "https://www.linkedin.com/in/ngozionya/",
@@ -103,7 +103,7 @@ const officers = [
     ngozi_onya,
 },
 {
-  id: "Membership Zone",
+  id: "Membership",
   name: 'Kilali Latter',
   role: 'Membership Chair',
   linkedin: "https://www.linkedin.com/in/kilali-latter-83871827b/",
@@ -111,7 +111,7 @@ const officers = [
     kilali_latter,
 },
 {
-  id: "Finance Zone",
+  id: "Finance",
   name: 'Naomi Tefera',
   role: 'Conference Planner',
   linkedin: "",
@@ -119,7 +119,7 @@ const officers = [
     naomi_tefera,
 },
 {
-  id: "Programs Zone",
+  id: "Programs",
   name: 'Faith Hypolite',
   role: 'Social Chair',
   linkedin: "https://www.linkedin.com/in/faith-hypolite-a46910297/",
@@ -127,7 +127,7 @@ const officers = [
     faith_hypolite,
 },
 {
-  id: "Programs Zone",
+  id: "Programs",
   name: 'Hewan Abunei',
   role: 'Social Chair',
   linkedin: "https://www.linkedin.com/in/hewan-abunei-818a1428b/",
@@ -135,7 +135,7 @@ const officers = [
     hewan_abunei,
 },
 {
-  id: "Programs Zone",
+  id: "Programs",
   name: 'Isabella Soares',
   role: 'TORCH Chair',
   linkedin: "https://www.linkedin.com/in/isabella-b-soares/",
@@ -143,7 +143,7 @@ const officers = [
     isabella_soares,
 },
 {
-  id: "Programs Zone",
+  id: "Programs",
   name: 'Ashauntee Fairley',
   role: 'PCI Torch Chair',
   linkedin: "https://www.linkedin.com/in/ashaunteefairley/",
@@ -151,7 +151,7 @@ const officers = [
     ashauntee_fairley,
 },
 {
-  id: "Membership Zone",
+  id: "Membership",
   name: 'Anna Martinez',
   role: 'FAT Advisor',
   linkedin: "https://www.linkedin.com/in/anna-martinez-4a977a21b/",
@@ -159,7 +159,7 @@ const officers = [
     anna_martinez,
 },
 {
-  id: "Communications Zone",
+  id: "Communications",
   name: 'Jorden Davis',
   role: 'Public Relations',
   linkedin: "",
@@ -167,7 +167,7 @@ const officers = [
     jorden_davis,
 },
 {
-  id: "Membership Zone",
+  id: "Membership",
   name: 'Chancellor Joseph',
   role: 'Academic Excellence',
   linkedin: "https://www.linkedin.com/in/chancellor-joseph-38586113a/",
@@ -175,7 +175,7 @@ const officers = [
     chancellor_joseph,
 },
 {
-  id: "Finance Zone",
+  id: "Finance",
   name: 'Joshua Chikosha',
   role: 'Conference Planner',
   linkedin: "https://www.linkedin.com/in/joshua-chikosha/",
