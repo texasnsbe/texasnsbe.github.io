@@ -361,22 +361,26 @@ p {
 /* Media Queries for responsiveness */
 @media (max-width: 320px) {
     .about-padding{
-        padding-top: 28rem;
+        padding-top: 32rem;
     }
     .herostyle{
-        font-size: 4.5rem;
+        font-size: 4rem;
+    }
+
+    .hero-padding{
+        padding-bottom: 8%;
     }
 
     .navstyle {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 
     .startl {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 
     .startm {
-        font-size: 1.2rem;
+        font-size: 1.25rem;
     }
 
     .start-topv-title {
@@ -384,14 +388,14 @@ p {
     }
 
     .headerstyle {
-        font-size: 4.5rem;
+        font-size: 4rem;
     }
 
     .subheaderstyle {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .impactstyle, .succeedstyle, .excelstyle {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 }
