@@ -11,7 +11,7 @@ const image = [
 ]
 export default function AboutDetails() {
     return (
-        <div className="purple-bg">
+        <>
             <div className="purple-bg pt-44">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className=" mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
@@ -37,6 +37,6 @@ export default function AboutDetails() {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
