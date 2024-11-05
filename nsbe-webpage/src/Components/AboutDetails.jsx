@@ -14,16 +14,16 @@ export default function AboutDetails() {
     <>
       <div className="mx-[12.5vw]">
         <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-y-16 lg:gap-x-16">
-            <img
-              src={image[0].src}
-              alt={image[0].name}
-              className=" darkbg object-cover transition-all hover:scale-110 duration-300 ease-out"
-            />
+          <img
+            src={image[0].src}
+            alt={image[0].name}
+            className=" darkbg object-cover transition-all hover:scale-110 duration-300 ease-out"
+          />
           <div className="flex flex-col justify-center">
             <h2 className="text-center text-3xl font-normal leading-8 mt-1 tracking-wider text-black mx-auto pt-5 ">
               What Are We
             </h2>
-            <h1 className="text-center headerstyle font-black pb-10 transition-all hover:scale-105 duration-300 ease-out">
+            <h1 className="text-[8rem] text-center max-xl:text-[11vw] herostyle tracking-tight transition-all hover:scale-105 duration-300 ease-out">
               ABOUT
             </h1>
             <p className=" text-black text-lg border-l-8 rounded-2xl darkbg border-orange-700 p-5 bg-orange-50 tracking-wide font-medium">
