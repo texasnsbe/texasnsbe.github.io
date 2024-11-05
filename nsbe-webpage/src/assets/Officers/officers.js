@@ -30,15 +30,15 @@ const officers = [
       daniel_akinola,
   },
 {
-    id: "Communications",
+    id: "Comms.",
     name: 'Kevin Uduji',
-    role: 'Telecomms Chair',
+    role: 'TeleComms. Chair',
     linkedin: "https://www.linkedin.com/in/kevinuduji/",
     imageUrl:
       kevin_uduji,
   },
   {
-    id: "Communications",
+    id: "Comms.",
     name: 'Angel Achar',
     role: 'Public Relations',
     linkedin: "https://www.linkedin.com/in/angel-a-0a2766284/",
@@ -71,7 +71,7 @@ const officers = [
       prince_fofanah,
   },
 {
-  id: "Communications",
+  id: "Comms.",
   name: 'Jasmin Addy',
   role: 'Cockrell Relations',
   linkedin: "https://www.linkedin.com/in/jasminaddy/",
@@ -87,7 +87,7 @@ const officers = [
     damion_norment,
 },
 {
-  id: "Communications",
+  id: "Comms.",
   name: 'Ganiat Ogidan',
   role: 'Historian',
   linkedin: "https://www.linkedin.com/in/ganiat-ogidan/",
@@ -159,7 +159,7 @@ const officers = [
     anna_martinez,
 },
 {
-  id: "Communications",
+  id: "Comms.",
   name: 'Jorden Davis',
   role: 'Public Relations',
   linkedin: "",

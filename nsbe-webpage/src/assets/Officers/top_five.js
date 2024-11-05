@@ -22,7 +22,7 @@ const topFive = [
   },
   {
     name: 'Eloghosa Eguakun',
-    role: { name: 'Secretary', zone: "Communications" },
+    role: { name: 'Secretary', zone: "Comms." },
     linkedin: "https://www.linkedin.com/in/eloghosa-eguakun-460171214/",
     imageUrl:
       eloghosa_eguakun,
