@@ -1,7 +1,7 @@
 import socials from '../assets/SocialMedia/socials_colors.js';
 const imgWidth = 150
 const imgHeight = 75
-const classDef = "col-span-2 max-h-36 w-full object-contain lg:col-span-1 transition-all hover:scale-125 duration-300 ease-out"
+const classDef = "col-span-2 max-h-24 w-full object-contain lg:col-span-1 transition-all hover:scale-110 duration-300 ease-out"
 
 export default function SocialLinks() {
     return (

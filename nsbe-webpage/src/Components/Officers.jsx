@@ -13,7 +13,7 @@ export default function Officers() {
             <div className="grid max-w-7xl gap-x-8 gap-y-20 xl:grid-cols-3 max-lg:grid-cols-1">
               <div className="flex flex-col max-xl:items-center max-xl:text-center">
                 <img
-                  className="max-xl:w-[40vw] object-cover darkbg transition-all hover:scale-110 duration-300 ease-out"
+                  className="max-xl:w-[40vw] max-sm:w-[90vw] object-cover darkbg transition-all hover:scale-110 duration-300 ease-out"
                   src={chairperson.imageUrl}
                 />
                 <h2 className="mt-10 tracking-tight text-gray-900 sm:text-4xl startl">
@@ -30,7 +30,7 @@ export default function Officers() {
                   />
                 </a>
               </div>
-
+          
               <ul
                 role="list"
                 className="sm:ml-16 grid gap-x-3 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
@@ -42,7 +42,7 @@ export default function Officers() {
                         <img
                           alt=""
                           src={person.imageUrl}
-                          className="h-28 w-auto rounded-full darkbg"
+                          className="h-[16vh] w-auto rounded-full darkbg"
                         />
                         <div>
                           <h3 className="text-base font-semibold leading-7 tracking-tight text-stone-100 startm">
@@ -55,7 +55,7 @@ export default function Officers() {
                             <img
                               alt=""
                               src="https://i.imgur.com/KJP9wXt.png"
-                              width="13%"
+                              width="25vw"
                               height=""
                               className="mt-2"
                             />

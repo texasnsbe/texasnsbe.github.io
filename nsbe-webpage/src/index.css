@@ -39,10 +39,9 @@ p {
     font-family: 'Poppins';
     color: #000; /* Primary text color */
     font-weight: bold; /* Bold text */
-    font-size: 2rem; /* Font size */
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, .2rem .2rem 0 #000;
+    font-size: 1.25rem; /* Font size */
+    text-shadow: -.5px -.5px 0 #000, .5px -.5px 0 #000, -.5px .5px 0 #000, .2rem .2rem 0 #000;
     -webkit-text-fill-color: transparent ;
-    -webkit-text-stroke:0rem;
     -webkit-text-fill-color: #bf5600;
 }
 
@@ -52,9 +51,9 @@ p {
     color: #000; /* Primary text color */
     font-weight: bold; /* Bold text */
     font-size: 1.5rem; /* Font size */
-    text-shadow: -.5px -.5px 0 #000, .5px -.5px 0 #000, -.5px .5px 0 #000, .23rem .23rem 0 #000;
+    text-shadow: -.3px -.3px 0 #000, .3px -.3px 0 #000, -.3px .3px 0 #000, .23rem .23rem 0 #000;
     -webkit-text-fill-color: transparent ;
-    -webkit-text-stroke: .1rem;
+    -webkit-text-stroke: .07rem;
     -webkit-text-fill-color: #fff;
 }
 
@@ -64,7 +63,7 @@ p {
     color: #000; /* Primary text color */
     font-weight: bold; /* Bold text */
     font-size: 1.3rem; /* Font size */
-    text-shadow: -.5px -.5px 0 #000, .5px -.5px 0 #000, -.5px .5px 0 #000, .18rem .18rem 0 #000;
+    text-shadow: -.3px -.3px 0 #000, .3px -.3px 0 #000, -.3px .3px 0 #000, .18rem .18rem 0 #000;
     -webkit-text-fill-color: transparent ;
     -webkit-text-stroke: .04rem;
     -webkit-text-fill-color: #fff;
@@ -76,9 +75,9 @@ p {
     color: #000; /* Primary text color */
     font-weight: bold; /* Bold text */
     font-size: 2.5rem; /* Font size */
-    text-shadow: -.5px -.5px 0 #000, .5px -.5px 0 #000, -.5px .5px 0 #000, .23rem .23rem 0 #000;
+    text-shadow: -.3px -.3px 0 #000, .3px -.3px 0 #000, -.3px .3px 0 #000, .23rem .23rem 0 #000;
     -webkit-text-fill-color: transparent ;
-    -webkit-text-stroke: .1rem;
+    -webkit-text-stroke: .07rem;
     -webkit-text-fill-color: #ffef15;
 }
 
@@ -88,7 +87,7 @@ p {
     color: #000; /* Primary text color */
     font-weight: bold; /* Bold text */
     font-size: 1.15rem; /* Font size */
-    text-shadow: -.5px -.5px 0 #000, .5px -.5px 0 #000, -.5px .5px 0 #000, .18rem .18rem 0 #000;
+    text-shadow: -.3px -.3px 0 #000, .3px -.3px 0 #000, -.3px .3px 0 #000, .18rem .18rem 0 #000;
     -webkit-text-fill-color: transparent ;
     -webkit-text-stroke: .02rem;
     -webkit-text-fill-color: #ffef15;
@@ -100,41 +99,39 @@ p {
     position: relative;
     color: #000; /* Primary text color */
     font-weight: bold; /* Bold text */
-    font-size: 5.5rem; /* Font size */
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, .7rem .7rem 0 #000;
+    font-size: 5rem; /* Font size */
+    text-shadow: -.5px -.5px 0 #000, .5px -.5px 0 #000, -.5px .5px 0 #000, .7rem .7rem 0 #000;
     -webkit-text-fill-color: transparent ;
-    -webkit-text-stroke: .2rem;
+    -webkit-text-stroke: .07rem;
     -webkit-text-fill-color: #fff;
 }
 
 .herostyle {
     font-family: 'Poppins';
-    position: relative;
     color: #000; /* Primary text color */
     font-weight: bold; /* Bold text */
-    font-size: 7rem; /* Font size */
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, .5rem .5rem 0 #000;
+    text-shadow: -.5px -.5px 0 #000, .5px -.5px 0 #000, -.5px .5px 0 #000, .5rem .5rem 0 #000;
     -webkit-text-fill-color: transparent ;
-    -webkit-text-stroke: .2rem;
+    -webkit-text-stroke: .07rem;
     -webkit-text-fill-color: #ffffff;
 }
 
 p {
     color: #fff;
 }
+
 .miniheader{
     font-size: 4vw;
 }
 
 .subheaderstyle {
     font-family: 'Poppins';
-    position: relative;
     color: #000; /* Primary text color */
     font-weight: bold; /* Bold text */
-    font-size:8.5vw; /* Font size */
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, .4rem .5rem 0 #000;
+    font-size:11.5vw; /* Font size */
+    text-shadow: -.5px -.5px 0 #000, .5px -.5px 0 #000, -.5px .5px 0 #000, .4rem .5rem 0 #000;
     -webkit-text-fill-color: transparent ;
-    -webkit-text-stroke: .1rem;
+    -webkit-text-stroke: .07rem;
     -webkit-text-fill-color: #ffffff
 
     ;
@@ -146,7 +143,7 @@ p {
     color: #000; /* Primary text color */
     font-weight: bold; /* Bold text */
     font-size: 2.5rem; /* Font size */
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, .3rem .3rem 0 #000;
+    text-shadow: -.5px -.5px 0 #000, .5px -.5px 0 #000, -.5px .5px 0 #000, .3rem .3rem 0 #000;
     -webkit-text-fill-color: transparent ;
     -webkit-text-stroke: .1rem;
     -webkit-text-fill-color: #f37666;
@@ -157,7 +154,7 @@ p {
     color: #000; /* Primary text color */
     font-weight: bold; /* Bold text */
     font-size: 2.5rem; /* Font size */
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, .3rem .3rem 0 #000;
+    text-shadow: -.5px -.5px 0 #000, .5px -.5px 0 #000, -.5px .5px 0 #000, .3rem .3rem 0 #000;
     -webkit-text-fill-color: transparent ;
     -webkit-text-stroke: .1rem;
     -webkit-text-fill-color: #85f366;
@@ -169,7 +166,7 @@ p {
     color: #000; /* Primary text color */
     font-weight: bold; /* Bold text */
     font-size: 2.5rem; /* Font size */
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, .3rem .3rem 0 #000;
+    text-shadow: -.5px -.5px 0 #000, .5px -.5px 0 #000, -.5px .5px 0 #000, .3rem .3rem 0 #000;
     -webkit-text-fill-color: transparent ;
     -webkit-text-stroke: .1rem;
     -webkit-text-fill-color: #f3f166;
@@ -179,7 +176,7 @@ p {
     position: relative;
     color: #333;
     box-shadow: 1rem 1rem 0px #000000;
-    outline: #000000 solid 5px;
+    outline: #000000 solid 3px;
     border-radius: 1rem;
     margin-bottom: .8rem;
 }
@@ -189,7 +186,7 @@ p {
     color: #ffffff;
     background-color: #ffef15;
     box-shadow: .5rem .5rem 0px #000000;
-    outline: #000000 solid .2rem;
+    outline: #000000 solid .15rem;
     margin-bottom: .8rem;
 }
 
@@ -204,7 +201,7 @@ p {
     margin:2rem;
     padding: 20px;
     background-color: #ffffff;
-    outline:solid 4px;
+    outline:solid 3px;
     box-shadow: .45rem .55rem 0px #000000;
     border-radius: 25px;
 }

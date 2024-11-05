@@ -32,7 +32,7 @@ const officers = [
 {
     id: "Communications",
     name: 'Kevin Uduji',
-    role: 'Telecommunications',
+    role: 'Telecomms Chair',
     linkedin: "https://www.linkedin.com/in/kevinuduji/",
     imageUrl:
       kevin_uduji,
