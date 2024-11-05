@@ -10,12 +10,11 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="z-50 purple-bg mb-10">
-      <header className="absolute inset-x-0 top-0 z-50">
-        <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8 navstyle">
+    <div className='mb-[12.5vh]'>
+      <header>
+        <nav aria-label="Global" className="flex items-center justify-between px-8 navstyle">
           <div className="flex lg:flex-1">
             <Link to="/" className="-m-1.5 p-1.5">
-              <span className="sr-only">NSBE</span>
               <img
                 alt=""
                 src="https://i.imgur.com/XwDXsvT.png"
@@ -30,7 +29,7 @@ export default function Navbar() {
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-900"
             >
               <span className="sr-only">Open main menu</span>
-              <Bars3Icon aria-hidden="true" className="h-6 w-6" />
+              <Bars3Icon aria-hidden="true" className="h-8 w-8" />
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
@@ -59,7 +58,7 @@ export default function Navbar() {
               </button>
             </div>
             <div className="mt-6 flow-root">
-              <div className="-my-6 divide-y divide-gray-500/10">
+              <div className="divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
                     <Link

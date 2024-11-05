@@ -1,14 +1,11 @@
-import ImageSwapper from '../Components/ImageSwapper'
-import images from '../Components/ImageSwapper'
-import groupPic from '../assets/EventPhotos/EventImages/GroupPic.jpg'
 import LoopingVideo from './LoopingVideo'
 
 export default function HeroSect() {
-  return (
-    <div className="purple-bg pt-40 sm:pt-8">
-      <div className="mx-auto max-w-7xl py-24 sm:px-6  sm:py-32 lg:px-8 ">
-        <div className= "hero-padding darkbg relative isolate overflow-hidden border-l-8 border-orange-700 bg-orange-50 px-6 pt-16 sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
-          <div className=" mx-auto max-w-lg text-center lg:mx-0 lg:flex-auto lg:py-20 lg:text-left">
+  return ( 
+    <div className=""> {/* purple-bg pt-40 sm:pt-8 */}
+      <div className=""> {/*  mx-auto max-w-8xl py- sm:px-6 sm:py-32 lg:px-8 */}
+        <div className="hero-padding darkbg overflow-hidden border-l-8 border-orange-700  px-6 pt-16 sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+          <div className="mx-auto max-w-lg text-center lg:mx-0 lg:flex-auto lg:py-20 lg:text-left">
             <h3 className="text-lg pb-3 font-bold tracking-wider startm sm:text-xl">
               National Society of Black Engineers
             </h3>
@@ -27,9 +24,6 @@ export default function HeroSect() {
               >
                 About Us
               </a>
-              {/* <a href="#" className="transition-all tracking-wider hover:scale-105 text-md px-3 font-semibold leading-6 text-white">
-                Our Newsletter <span aria-hidden="true">→</span>
-              </a> */}
             </div>
           </div>
             <LoopingVideo />

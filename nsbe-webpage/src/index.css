@@ -17,8 +17,8 @@ html{
 @layer base {
     body {
         background-color: #ffffff;
-background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 0C6.716 0 0 6.716 0 15c8.284 0 15-6.716 15-15zM0 15c0 8.284 6.716 15 15 15 0-8.284-6.716-15-15-15zm30 0c0-8.284-6.716-15-15-15 0 8.284 6.716 15 15 15zm0 0c0 8.284-6.716 15-15 15 0-8.284 6.716-15 15-15z' fill='%23b9730f' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
-}
+        background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 0C6.716 0 0 6.716 0 15c8.284 0 15-6.716 15-15zM0 15c0 8.284 6.716 15 15 15 0-8.284-6.716-15-15-15zm30 0c0-8.284-6.716-15-15-15 0 8.284 6.716 15 15 15zm0 0c0 8.284-6.716 15-15 15 0-8.284 6.716-15 15-15z' fill='%23b9730f' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+    }
 }
 
 .base-bg {
@@ -26,7 +26,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox=
 }
 
 .purple-bg {
-    background-color: #bf5600cd
+    background-color: #bf5600ad
 
     ;
 }
@@ -37,16 +37,13 @@ p {
 
 .navstyle {
     font-family: 'Poppins';
-    position: relative;
     color: #000; /* Primary text color */
     font-weight: bold; /* Bold text */
     font-size: 2rem; /* Font size */
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, .2rem .2rem 0 #000;
     -webkit-text-fill-color: transparent ;
     -webkit-text-stroke:0rem;
-    -webkit-text-fill-color: #bf5600
-
-    ;
+    -webkit-text-fill-color: #bf5600;
 }
 
 .startl {
@@ -66,7 +63,7 @@ p {
     position: relative;
     color: #000; /* Primary text color */
     font-weight: bold; /* Bold text */
-    font-size: 1.5rem; /* Font size */
+    font-size: 1.3rem; /* Font size */
     text-shadow: -.5px -.5px 0 #000, .5px -.5px 0 #000, -.5px .5px 0 #000, .18rem .18rem 0 #000;
     -webkit-text-fill-color: transparent ;
     -webkit-text-stroke: .04rem;
@@ -103,7 +100,7 @@ p {
     position: relative;
     color: #000; /* Primary text color */
     font-weight: bold; /* Bold text */
-    font-size: 7rem; /* Font size */
+    font-size: 5.5rem; /* Font size */
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, .7rem .7rem 0 #000;
     -webkit-text-fill-color: transparent ;
     -webkit-text-stroke: .2rem;
@@ -125,13 +122,16 @@ p {
 p {
     color: #fff;
 }
+.miniheader{
+    font-size: 4vw;
+}
 
 .subheaderstyle {
     font-family: 'Poppins';
     position: relative;
     color: #000; /* Primary text color */
     font-weight: bold; /* Bold text */
-    font-size: 6rem; /* Font size */
+    font-size:8.5vw; /* Font size */
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, .4rem .5rem 0 #000;
     -webkit-text-fill-color: transparent ;
     -webkit-text-stroke: .1rem;
@@ -179,7 +179,7 @@ p {
     position: relative;
     color: #333;
     box-shadow: 1rem 1rem 0px #000000;
-    outline: #000000 solid .2rem;
+    outline: #000000 solid 5px;
     border-radius: 1rem;
     margin-bottom: .8rem;
 }
@@ -201,13 +201,12 @@ p {
 
 .navstyle {
     position: relative;
-    margin:1.2rem;
-    margin-bottom: 10rem;
+    margin:2rem;
     padding: 20px;
     background-color: #ffffff;
-    box-shadow: .4rem .5rem 0px #000000;
+    outline:solid 4px;
+    box-shadow: .45rem .55rem 0px #000000;
     border-radius: 25px;
-    
 }
 
 .image-gallery {
@@ -270,10 +269,6 @@ p {
     .headerstyle {
         font-size: 6rem;
     }
-
-    .subheaderstyle {
-        font-size: 6rem;
-    }
 }
 
 @media (max-width: 768px) {
@@ -284,10 +279,6 @@ p {
 
     .hero-padding{
         padding-bottom: 8%;
-    }
-
-    .navstyle {
-        font-size: 2.5rem;
     }
 
     .startl {
@@ -304,10 +295,6 @@ p {
 
     .headerstyle {
         font-size: 6rem;
-    }
-
-    .subheaderstyle {
-        font-size: 5rem;
     }
 
     .impactstyle, .succeedstyle, .excelstyle {
@@ -329,9 +316,6 @@ p {
         padding-bottom: 8%;
     }
 
-    .navstyle {
-        font-size: 2rem;
-    }
 
     .startl {
         font-size: 2rem;
@@ -347,10 +331,6 @@ p {
 
     .headerstyle {
         font-size: 5rem;
-    }
-
-    .subheaderstyle {
-        font-size: 3rem;
     }
 
     .impactstyle, .succeedstyle, .excelstyle {
@@ -371,10 +351,6 @@ p {
         padding-bottom: 8%;
     }
 
-    .navstyle {
-        font-size: 1.5rem;
-    }
-
     .startl {
         font-size: 1.5rem;
     }
@@ -389,10 +365,6 @@ p {
 
     .headerstyle {
         font-size: 4rem;
-    }
-
-    .subheaderstyle {
-        font-size: 2rem;
     }
 
     .impactstyle, .succeedstyle, .excelstyle {

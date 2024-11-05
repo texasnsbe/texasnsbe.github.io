@@ -1,27 +1,20 @@
 export default function DisplayPoints() {
     return (
       <>
-       <div className="purple-bg py-16 sm:py-16">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:mx-0">
-            <p className="mt-2 font-semibold text-lg tracking-wider leading-8 text-black mx-auto">
-              Check out NSBE's most active members!
+        <div className="flex justify-center py-[7vh]">
+          <div className="flex flex-col">
+            <p className="miniheader sm:text-lg font-semibold tracking-wider leading-relaxed text-black">
+              Most Active Members!
             </p>
-            <h2 className="text-3xl headerstyle subheaderstyle text-gray-900 sm:text-7xl transition-all hover:scale-105 duration-300 ease-out pb-10">Leaderboard</h2>
-            
+            <h2 className="subheaderstyle md:text-7xl text-gray-900 transition-all hover:scale-105 duration-300 ease-out mb-10">
+              Leaderboard
+            </h2> 
+            <iframe
+              src= "https://script.google.com/macros/s/AKfycbyNfzaTwzEEDc45ZqGRdDVbjS2XCpv2cn8KLFxG_rgPKd8Qt9EH5mYJWWTsO92d0qaD/exec"
+              className="h-[75vh] w-[75vw] max-lg:h-[60vh] max-md:h-[50vh] max-sm:h-[35vh] max-sm:w-[90vw] darkbg transition-all hover:scale-105 duration-300 ease-out"
+            /> 
           </div>
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 flex justify-center">
-          <iframe
-            src="https://script.google.com/macros/s/AKfycbyNfzaTwzEEDc45ZqGRdDVbjS2XCpv2cn8KLFxG_rgPKd8Qt9EH5mYJWWTsO92d0qaD/exec"
-            style={{width: "100%", minHeight: "600px" }}
-            className="darkbg transition-all hover:scale-105 duration-300 ease-out"
-            height="600"
-            frameBorder="0"
-            scrolling="no"
-          />
         </div>
-        </div>
-      </div>
       </>
     );
   };

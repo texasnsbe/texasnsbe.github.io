@@ -2,7 +2,7 @@ import resources from '../assets/resources.js'
 
 export default function ResourceLinks() {
     return (
-        <div className="purple-bg py-56 sm:py-40">
+        <div className=" py-56 sm:py-40">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <h2 className="text-center text-3xl font-normal leading-8 mt-1 tracking-wider text-black mx-auto pt-5 ">
                     Can NSBE Get Any Better?

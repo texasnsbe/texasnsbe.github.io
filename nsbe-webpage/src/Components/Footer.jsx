@@ -6,10 +6,10 @@ const classDef = "col-span-2 max-h-12 w-full object-contain lg:col-span-1 transi
 
 export default function Footer() {
   return (
-    <div className="purple-bg footer">
+    <div className="footer">
       <div className="footer-content">
-        <h1 className='text-6xl font-semibold mb-10'>Get in Touch</h1>
-        <div className="flex justify-center mx-auto mt-16 max-w-lg items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5 ">
+        <h1 className='text-4xl font-semibold'>Get in Touch</h1>
+        <div className="flex justify-center mx-auto mt-[5vh] max-w-lg items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5 ">
           {socials.map((socialImg) => (
             <a href={socialImg.link}>
                 <img
@@ -20,7 +20,7 @@ export default function Footer() {
             </a>
           ))}
           </div>
-        <p className='mt-20'>© 2024-2025 University of Texas NSBE. All rights reserved.</p>
+        <p className='mt-[10vh]'>©2024-2025 Texas NSBE. All rights reserved.</p>
       </div>
     </div>
   );
