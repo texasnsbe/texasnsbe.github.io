@@ -23,10 +23,10 @@ export default function AboutDetails() {
             <h2 className="text-center text-3xl font-normal leading-8 mt-1 tracking-wider text-black mx-auto pt-5 ">
               What Are We
             </h2>
-            <h1 className="text-[8rem] text-center max-xl:text-[11vw] herostyle tracking-tight transition-all hover:scale-105 duration-300 ease-out">
+            <h1 className="text-center herostyle tracking-tight transition-all hover:scale-105 duration-300 ease-out">
               ABOUT
             </h1>
-            <p className=" text-black text-lg border-l-8 rounded-2xl darkbg border-orange-700 p-5 bg-orange-50 tracking-wide font-medium">
+            <p className="text-black text-lg border-l-8 rounded-2xl darkbg border-orange-700 p-5 bg-orange-50 tracking-wide font-medium">
               <span className="text-xl inline-block rounded-md pl-2 pr-1 startl">
                 O
               </span>

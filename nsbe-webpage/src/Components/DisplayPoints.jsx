@@ -1,12 +1,12 @@
 export default function DisplayPoints() {
     return (
       <>
-        <div className="flex justify-center py-[7vh]">
+        <div className="flex justify-center py-[5vh]">
           <div className="flex flex-col">
-            <p className="miniheader sm:text-lg font-semibold tracking-wider leading-relaxed text-black">
+            <p className="miniheader sm:text-xl font-semibold tracking-wider leading-relaxed text-black">
               Most Active Members!
             </p>
-            <h2 className="subheaderstyle md:text-7xl text-gray-900 transition-all hover:scale-105 duration-300 ease-out mb-10">
+            <h2 className="subheaderstyle text-gray-900 transition-all hover:scale-105 duration-300 ease-out mb-3">
               Leaderboard
             </h2> 
             <iframe

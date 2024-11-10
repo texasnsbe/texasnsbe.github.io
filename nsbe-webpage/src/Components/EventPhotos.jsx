@@ -1,7 +1,6 @@
 import React from 'react'
 import images from '../assets/EventPhotos/event_photos.js'
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
-import ImageSwapper from './ImageSwapper.jsx';
 
 export default function EventPhotos() {
     const slideLeft = () => {

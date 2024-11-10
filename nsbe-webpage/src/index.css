@@ -3,13 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins';
 }
+
 html{
     scroll-behavior:smooth;
 }
@@ -26,9 +26,7 @@ html{
 }
 
 .purple-bg {
-    background-color: #bf5600ad
-
-    ;
+    background-color: #bf5600ad;
 }
 
 p {
@@ -41,7 +39,6 @@ p {
     font-weight: bold; /* Bold text */
     font-size: 1.25rem; /* Font size */
     text-shadow: -.5px -.5px 0 #000, .5px -.5px 0 #000, -.5px .5px 0 #000, .2rem .2rem 0 #000;
-    -webkit-text-fill-color: transparent ;
     -webkit-text-fill-color: #bf5600;
 }
 
@@ -93,26 +90,14 @@ p {
     -webkit-text-fill-color: #ffef15;
 }
 
-
- .headerstyle {
-    font-family: 'Poppins';
-    position: relative;
-    color: #000; /* Primary text color */
-    font-weight: bold; /* Bold text */
-    font-size: 5rem; /* Font size */
-    text-shadow: -.5px -.5px 0 #000, .5px -.5px 0 #000, -.5px .5px 0 #000, .7rem .7rem 0 #000;
-    -webkit-text-fill-color: transparent ;
-    -webkit-text-stroke: .07rem;
-    -webkit-text-fill-color: #fff;
-}
-
 .herostyle {
     font-family: 'Poppins';
     color: #000; /* Primary text color */
     font-weight: bold; /* Bold text */
-    text-shadow: -.5px -.5px 0 #000, .5px -.5px 0 #000, -.5px .5px 0 #000, .5rem .5rem 0 #000;
-    -webkit-text-fill-color: transparent ;
-    -webkit-text-stroke: .07rem;
+    text-align: center;
+    font-size: 8.5vw;/* Font size */
+    text-shadow: .7vw .7vw #000;
+    -webkit-text-stroke: .05vw;
     -webkit-text-fill-color: #ffffff;
 }
 
@@ -121,79 +106,34 @@ p {
 }
 
 .miniheader{
-    font-size: 4vw;
+    font-size: 2.75vw;
 }
 
 .subheaderstyle {
     font-family: 'Poppins';
     color: #000; /* Primary text color */
     font-weight: bold; /* Bold text */
-    font-size:11.5vw; /* Font size */
-    text-shadow: -.5px -.5px 0 #000, .5px -.5px 0 #000, -.5px .5px 0 #000, .4rem .5rem 0 #000;
-    -webkit-text-fill-color: transparent ;
-    -webkit-text-stroke: .07rem;
-    -webkit-text-fill-color: #ffffff
-
-    ;
-}
-
-.excelstyle {
-    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    position: relative;
-    color: #000; /* Primary text color */
-    font-weight: bold; /* Bold text */
-    font-size: 2.5rem; /* Font size */
-    text-shadow: -.5px -.5px 0 #000, .5px -.5px 0 #000, -.5px .5px 0 #000, .3rem .3rem 0 #000;
-    -webkit-text-fill-color: transparent ;
-    -webkit-text-stroke: .1rem;
-    -webkit-text-fill-color: #f37666;
-}
-.succeedstyle {
-    font-family: 'Poppins';
-    position: relative;
-    color: #000; /* Primary text color */
-    font-weight: bold; /* Bold text */
-    font-size: 2.5rem; /* Font size */
-    text-shadow: -.5px -.5px 0 #000, .5px -.5px 0 #000, -.5px .5px 0 #000, .3rem .3rem 0 #000;
-    -webkit-text-fill-color: transparent ;
-    -webkit-text-stroke: .1rem;
-    -webkit-text-fill-color: #85f366;
-}
-
-.impactstyle {
-    font-family: 'Poppins';
-    position: relative;
-    color: #000; /* Primary text color */
-    font-weight: bold; /* Bold text */
-    font-size: 2.5rem; /* Font size */
-    text-shadow: -.5px -.5px 0 #000, .5px -.5px 0 #000, -.5px .5px 0 #000, .3rem .3rem 0 #000;
-    -webkit-text-fill-color: transparent ;
-    -webkit-text-stroke: .1rem;
-    -webkit-text-fill-color: #f3f166;
+    font-size: 6vw; /* Font size */
+    text-shadow: .5vw .6vh #000;
+    -webkit-text-stroke: .05vw;
+    -webkit-text-fill-color: #ffffff;
 }
 
 .darkbg {
     position: relative;
-    color: #333;
-    box-shadow: 1rem 1rem 0px #000000;
-    outline: #000000 solid 3px;
-    border-radius: 1rem;
-    margin-bottom: .8rem;
+    color: #000000;
+    box-shadow: .75vw .75vw #000000;
+    outline: #000000 solid .125vw;
+    border-radius: 25px;
+    
 }
 
 .buttondarkbg {
     position: relative;
     color: #ffffff;
     background-color: #ffef15;
-    box-shadow: .5rem .5rem 0px #000000;
-    outline: #000000 solid .15rem;
-    margin-bottom: .8rem;
-}
-
-.bordered-element Link{
-    margin: 0 0 10px;
-    font-size: 2.5em;
-    color: #333;
+    box-shadow: .4vw .4vw #000000;
+    outline: #000000 solid .1vw;
 }
 
 .navstyle {
@@ -201,28 +141,10 @@ p {
     margin: 1.25rem;
     padding: 20px;
     background-color: #ffffff;
-    outline:solid 3px;
-    box-shadow: .45rem .55rem 0px #000000;
+    outline:solid .1vw;
+    box-shadow: .75vw .75vw #000000;
     border-radius: 25px;
 }
-
-.image-gallery {
-    display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    padding: 10px;
-    white-space: nowrap;
-    scroll-behavior: smooth;
-  }
-  
-  .gallery-image {
-    flex-shrink: 0;
-    width: 600px;
-    height: 200px;
-    object-fit: cover;
-    margin-right: 10px;
-    border-radius: 8px;
-  }
 
 .scrollbar-hide::-webkit-scrollbar {
     display: none;

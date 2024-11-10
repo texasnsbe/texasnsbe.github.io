@@ -2,12 +2,12 @@ import gbmposts from "../assets/HomeEvents/gbm.js"
 
 export default function Meetings() {
   return (
-    <div className="flex justify-center lg:mx-[12.5vw] py-[7vh]">
+    <div className="flex justify-center lg:mx-[12.5vw] py-[5vh]">
       <div className="flex flex-col">
-          <p className="miniheader sm:text-lg font-semibold tracking-wider leading-relaxed text-black">
+          <p className="miniheader sm:text-xl font-semibold tracking-wider leading-relaxed text-black">
             Missed the Meeting?
           </p>
-          <h2 className="mb-8 subheaderstyle md:text-7xl text-gray-900 transition-all hover:scale-105 duration-300 ease-out">
+          <h2 className="mb-3 subheaderstyle text-gray-900 transition-all hover:scale-105 duration-300 ease-out">
             Recent GBMs
           </h2>
           <div className="grid grid-cols-3 max-lg:grid-cols-1 gap-x-8 gap-y-24">
@@ -18,7 +18,7 @@ export default function Meetings() {
                     {post.date}
                   </time>
                 </div>
-                <div className="my-5 ">
+                <div className="my-5">
                   <img className="max-lg:h-[50vh] max-lg:w-[80vw] max-sm:h-[35vh] max-sm:w-[90vw] object-cover darkbg transition-all hover:scale-105 duration-300 ease-out rounded-2xl "
                     src={post.slideImg}
                   />

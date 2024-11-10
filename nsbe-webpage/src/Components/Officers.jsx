@@ -48,7 +48,7 @@ export default function Officers() {
                           <h3 className="text-base font-semibold leading-7 tracking-tight text-stone-100 startm">
                             {person.name}
                           </h3>
-                          <p className="text-lg font-semibold leading-6 text-yellow-400 start-title">
+                          <p className="font-semibold leading-6 text-yellow-400 start-title">
                             {person.role}
                           </p>
                           <a href={person.linkedin}>
