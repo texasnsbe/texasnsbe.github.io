@@ -7,7 +7,7 @@ export default function Officers() {
       <div className="pb-10">
         {top_v.map((chairperson) => (
           <div className="py-6 mx-[12.5vw]">
-            <h1 className="my-10 max-xl:text-center subheaderstyle sm:text-7xl transition-all hover:scale-105 duration-300 ease-out">
+            <h1 className="my-10 max-xl:text-center subheaderstyle transition-all hover:scale-105 duration-300 ease-out">
               {chairperson.role.zone}
             </h1>
             <div className="grid max-w-7xl gap-x-8 gap-y-20 xl:grid-cols-3 max-lg:grid-cols-1">
@@ -16,13 +16,17 @@ export default function Officers() {
                   className="max-xl:w-[40vw] max-sm:w-[90vw] object-cover darkbg transition-all hover:scale-110 duration-300 ease-out"
                   src={chairperson.imageUrl}
                 />
-                <h2 className="mt-10 tracking-tight text-gray-900 sm:text-4xl startl">
+                <h2 className="mt-10 tracking-tight text-gray-900 startl">
                   {chairperson.name}
                 </h2>
-                <p className="mt-1 text-4xl max-md:text-3xl font-semibold start-topv-title">
+                <p className="mt-1 text-4xl font-semibold start-topv-title">
                   {chairperson.role.name}
                 </p>
-                <a href={chairperson.linkedin}>
+                <a
+                  href={chairperson.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img
                     src="https://i.imgur.com/KJP9wXt.png"
                     width="50vw"
@@ -30,7 +34,7 @@ export default function Officers() {
                   />
                 </a>
               </div>
-          
+
               <ul
                 role="list"
                 className="sm:ml-16 grid gap-x-3 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
@@ -45,13 +49,17 @@ export default function Officers() {
                           className="h-[16vh] w-auto rounded-full darkbg"
                         />
                         <div>
-                          <h3 className="text-base font-semibold leading-7 tracking-tight text-stone-100 startm">
+                          <h3 className="font-semibold leading-6 tracking-tight text-stone-100 startm">
                             {person.name}
                           </h3>
                           <p className="font-semibold leading-6 text-yellow-400 start-title">
                             {person.role}
                           </p>
-                          <a href={person.linkedin}>
+                          <a
+                            href={person.linkedin}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <img
                               alt=""
                               src="https://i.imgur.com/KJP9wXt.png"

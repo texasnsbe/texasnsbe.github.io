@@ -4,7 +4,8 @@ import video from '../assets/EventPhotos/NSBEEE.mp4'; // Adjust the path to your
 const LoopingVideo = () => {
   return (
     <div>
-      <video 
+      <video
+        preload='auto' 
         autoPlay 
         muted 
         loop 

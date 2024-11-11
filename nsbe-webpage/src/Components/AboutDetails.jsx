@@ -20,9 +20,6 @@ export default function AboutDetails() {
             className=" darkbg object-cover transition-all hover:scale-110 duration-300 ease-out"
           />
           <div className="flex flex-col justify-center">
-            <h2 className="text-center text-3xl font-normal leading-8 mt-1 tracking-wider text-black mx-auto pt-5 ">
-              What Are We
-            </h2>
             <h1 className="text-center herostyle tracking-tight transition-all hover:scale-105 duration-300 ease-out">
               ABOUT
             </h1>
@@ -35,7 +32,7 @@ export default function AboutDetails() {
               and positively impacting the community. We offer resources for
               academic excellence, professional development, etc..
             </p>
-            {/* <Link href="https://www.instagram.com/nsbe.official/" class="ml-3 mt-10 block w-fit rounded-md px-16 py-3 text-center text-sm font-semibold text-white startm hover:bg-orange-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600 buttondarkbg transition-all hover:scale-105 duration-300 ease-out">Fund NSBE</Link> */}
+
           </div>
         </div>
       </div>

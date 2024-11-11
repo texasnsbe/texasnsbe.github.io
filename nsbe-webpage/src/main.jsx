@@ -16,7 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/about" element={<AboutApp />} />
         <Route path="/contact" element={<ContactApp />} />
         <Route path="/opportunities" element={<OpportunityApp />} />
-        <Route path="/resources" element={<ResourcesApp />} />
+        {/* <Route path="/resources" element={<ResourcesApp />} /> */}
       </Routes>
     </Router>
   </React.StrictMode>,

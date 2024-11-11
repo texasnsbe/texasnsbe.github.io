@@ -12,23 +12,25 @@ export default function Meetings() {
           </h2>
           <div className="grid grid-cols-3 max-lg:grid-cols-1 gap-x-8 gap-y-24">
             {gbmposts.map((post) => (
-              <article href={post.href} className="flex flex-col justify-between">
-                <div>
-                  <time className="text-white font-semibold text-xl">
-                    {post.date}
-                  </time>
-                </div>
-                <div className="my-5">
-                  <img className="max-lg:h-[50vh] max-lg:w-[80vw] max-sm:h-[35vh] max-sm:w-[90vw] object-cover darkbg transition-all hover:scale-105 duration-300 ease-out rounded-2xl "
-                    src={post.slideImg}
-                  />
-                </div>
-                <div className="w-full text-black border-l-8 rounded-2xl darkbg border-orange-700 p-[2.5vh] bg-orange-50">
-                  <h3 className="text-xl font-bold leading-6">
-                      {post.title}
-                  </h3>
-                </div>
-              </article>
+              <a href={post.href} target="_blank" rel="noopener noreferrer">
+                <article className="flex flex-col justify-between">
+                  <div>
+                    <time className="text-white font-semibold text-xl">
+                      {post.date}
+                    </time>
+                  </div>
+                  <div className="my-5">
+                    <img className="max-lg:h-[50vh] max-lg:w-[80vw] max-sm:h-[35vh] max-sm:w-[90vw] object-cover darkbg transition-all hover:scale-105 duration-300 ease-out rounded-2xl "
+                      src={post.slideImg}
+                    />
+                  </div>
+                  <div className="w-full text-black border-l-8 rounded-2xl darkbg border-orange-700 p-[2.5vh] bg-orange-50">
+                    <h3 className="text-xl font-bold leading-6">
+                        {post.title}
+                    </h3>
+                  </div>
+                </article>
+              </a>
             ))}
           </div>
       </div>
