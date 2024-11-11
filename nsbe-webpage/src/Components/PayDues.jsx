@@ -11,7 +11,7 @@ export default function PayDues() {
               <h2 className="miniheader sm:text-xl font-semibold tracking-wider leading-relaxed text-black">
                 NSBE VIP
               </h2>
-              <p className="mt-2 subheaderstyle text-gray-900 transition-all hover:scale-105 duration-300 ease-out mb-10">
+              <p className="subheaderstyle text-gray-900 transition-all hover:scale-105 duration-300 ease-out mb-10">
                 Pay Dues
               </p>
               <dl className="mt-10 max-w-xl space-y-5 text-black border-l-8 rounded-2xl darkbg border-orange-700 p-7 bg-orange-50 tracking-wider leading-7 lg:max-w-none">
@@ -34,7 +34,9 @@ export default function PayDues() {
                 ))}
                 <a
                   href="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc2rP4CcGY-RkZGd3M3lASSjejy1TgNu-l2nUIaqOjCXUIicw/viewform?usp=sf_link&pli=1"
-                  class="block w-fit rounded-md bg-orange-700 startm px-8 py-2 text-center font-semibold hover:bg-orange-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 transition-all hover:scale-105 duration-300 ease-out buttondarkbg"
+                  class="block w-fit rounded-[24px] bg-orange-700 startm px-8 py-2 text-center font-semibold hover:bg-orange-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 transition-all hover:scale-105 duration-300 ease-out buttondarkbg"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Pay Now
                 </a>
@@ -46,7 +48,7 @@ export default function PayDues() {
             src={tshirt}
             width={2432}
             height={1442}
-            className="darkbg mt-10 w-[48rem] rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0 transition-all hover:scale-105 duration-300 ease-out"
+            className="darkbg mt-10 w-[48rem] sm:w-[57rem] md:-ml-4 lg:-ml-0 transition-all hover:scale-105 duration-300 ease-out"
           />
         </div>
       </div>

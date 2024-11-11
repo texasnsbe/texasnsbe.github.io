@@ -7,12 +7,12 @@ import PayDues from './Components/PayDues';
 import Footer from './Components/Footer';
 import DisplayPoints from './Components/DisplayPoints';
 import JoinSlack from './Components/JoinSlack';
-import NewHeroSect from './Components/NewHeroSect';
+import HeroSect from './Components/HeroSect';
 const App = () => {
   return (
     <>
           <Navbar />
-          <NewHeroSect/>
+          <HeroSect/>
           <EventPhotos />
           <GoogleCal />
           <JoinSlack/>

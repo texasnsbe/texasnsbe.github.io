@@ -1,4 +1,3 @@
-import blank_photo from '../Officers/Officer_Images/Blank Photo.jpg'
 import daniel_akinola from '../Officers/New_Officer_Photos/Daniel.jpg'
 import angel_achar from '../Officers/New_Officer_Photos/Angel.jpg'
 import david_udoh from '../Officers/New_Officer_Photos/DavidU.jpg'

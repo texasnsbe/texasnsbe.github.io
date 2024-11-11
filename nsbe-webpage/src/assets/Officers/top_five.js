@@ -3,7 +3,6 @@ import david_fasasi from '../Officers/New_Officer_Photos/DavidF.jpg'
 import eloghosa_eguakun from '../Officers/New_Officer_Photos/Eloghosa.jpg'
 import sulaimon_suleonosipe from '../Officers/New_Officer_Photos/Sulaimon.jpg'
 import habsa_aydid from '../Officers/New_Officer_Photos/Habsa.jpg'
-import blank_photo from '../Officers/Officer_Images/Blank Photo.jpg'
 
 const topFive = [
   {
