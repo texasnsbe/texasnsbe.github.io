@@ -5,6 +5,7 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom'
 import navigation from '../assets/navigation.js'
+import logo from '../assets/UTNSBE logo.png'
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -17,7 +18,7 @@ export default function Navbar() {
             <Link to="/" className="-m-1.5 p-1.5">
               <img
                 alt=""
-                src="https://i.imgur.com/XwDXsvT.png"
+                src={logo}
                 className="h-15 w-auto transition-all hover:scale-125 duration-300 ease-out"
               />
             </Link>
