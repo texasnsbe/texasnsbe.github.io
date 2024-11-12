@@ -14,11 +14,6 @@ export default function AboutDetails() {
     <>
       <div className="mx-[12.5vw]">
         <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-y-16 lg:gap-x-16">
-          <img
-            src={image[0].src}
-            alt={image[0].name}
-            className=" darkbg object-cover transition-all hover:scale-110 duration-300 ease-out"
-          />
           <div className="flex flex-col justify-center">
             <h1 className="text-center herostyle tracking-tight transition-all hover:scale-105 duration-300 ease-out">
               ABOUT
@@ -32,8 +27,12 @@ export default function AboutDetails() {
               and positively impacting the community. We offer resources for
               academic excellence, professional development, etc..
             </p>
-
           </div>
+          <img
+            src={image[0].src}
+            alt={image[0].name}
+            className=" darkbg object-cover transition-all hover:scale-110 duration-300 ease-out"
+          />
         </div>
       </div>
     </>
