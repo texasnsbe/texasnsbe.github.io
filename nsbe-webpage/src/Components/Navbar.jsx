@@ -1,19 +1,22 @@
-'use client'
-import React from 'react'
-import { useState } from 'react'
-import { Dialog, DialogPanel } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { Link } from 'react-router-dom'
-import navigation from '../assets/navigation.js'
-import logo from '../assets/UTNSBE logo.png'
+"use client";
+import React from "react";
+import { useState } from "react";
+import { Dialog, DialogPanel } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
+import navigation from "../assets/navigation.js";
+import logo from "../assets/UTNSBE logo.png";
 
 export default function Navbar() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className='mb-[12.5vh]'>
+    <div className="mb-[12.5vh]">
       <header>
-        <nav aria-label="Global" className="flex items-center justify-between px-8 navstyle">
+        <nav
+          aria-label="Global"
+          className="flex items-center justify-between px-8 navstyle"
+        >
           <div className="flex lg:flex-1">
             <Link to="/" className="-m-1.5 p-1.5">
               <img
@@ -35,19 +38,33 @@ export default function Navbar() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <Link key={item.name} to={item.to} className="text-2xl font-semibold leading-6 hover:text-orange-600 transition-all hover:scale-125 duration-300 ease-out text-[#fff] text-300">
+              <Link
+                key={item.name}
+                to={item.to}
+                className="text-2xl font-semibold leading-6 hover:text-orange-600 transition-all hover:scale-125 duration-300 ease-out text-[#fff] text-300"
+              >
                 {item.name}
               </Link>
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <Link to="/" className="text-sm font-semibold leading-6 text-gray-900">
-            </Link>
+            <Link
+              to="/"
+              className="text-sm font-semibold leading-6 text-gray-900"
+            ></Link>
           </div>
         </nav>
-        <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
-          <div className="fixed inset-0 z-50" />
-          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#fff] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog
+          open={mobileMenuOpen}
+          onClose={setMobileMenuOpen}
+          className="lg:hidden"
+        >
+          <div className="fixed inset-0 z-50 bg-black bg-opacity-50 backdrop-blur-sm" />
+          <DialogPanel
+            className={`fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white bg-opacity-30 backdrop-blur-lg px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 transform transition-transform duration-300 ease-out ${
+              mobileMenuOpen ? "translate-x-8" : "translate-x-full"
+            }`}
+          >
             <div className="flex items-center justify-between">
               <button
                 type="button"
@@ -65,19 +82,17 @@ export default function Navbar() {
                     <Link
                       key={item.name}
                       to={item.to}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      className="-mx-3 block px-3 py-3 startm text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 transition-all hover:scale-105 duration-300 ease-out"
                     >
                       {item.name}
                     </Link>
                   ))}
                 </div>
-                
               </div>
             </div>
           </DialogPanel>
         </Dialog>
       </header>
-      
     </div>
-  )
+  );
 }

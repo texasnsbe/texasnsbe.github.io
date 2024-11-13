@@ -20,7 +20,7 @@ export default function Footer() {
             </a>
           ))}
         </div>
-        <p className="mt-[3vh] font-bold text-black">Email: utnsbechair1@gmail.com</p>
+        <p className="mt-[3vh] font-bold text-black">📥 utnsbechair1@gmail.com</p>
         <p className='font-bold'>©2024-2025 Texas NSBE. All rights reserved.</p>
       </div>
     </div>

@@ -12,7 +12,7 @@ const image = [
 export default function AboutDetails() {
   return (
     <>
-      <div className="mx-[12.5vw]">
+      <div className="mx-[9vw]">
         <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-y-16 lg:gap-x-16">
           <div className="flex flex-col justify-center">
             <h1 className="text-center herostyle tracking-tight transition-all hover:scale-105 duration-300 ease-out">
@@ -24,8 +24,7 @@ export default function AboutDetails() {
               </span>
               ur mission is to increase the number of culturally responsible
               Black engineers excelling academically, succeeding professionally,
-              and positively impacting the community. We offer resources for
-              academic excellence, professional development, etc..
+              and positively impacting the community!
             </p>
           </div>
           <img
