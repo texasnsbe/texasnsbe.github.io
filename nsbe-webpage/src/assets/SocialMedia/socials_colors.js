@@ -6,7 +6,7 @@ const socialImgs = [
     },
     {
         img: "https://i.imgur.com/Qed4AT4.png",
-        link: "https://www.instagram.com/ut_nsbe/",
+        link: "https://www.instagram.com/texasnsbe?igsh=MWk3NGtvYXhiZmc1cw==",
         name: "Instagram",
     },
     {
