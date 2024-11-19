@@ -1,6 +1,11 @@
 import { CheckBadgeIcon } from '@heroicons/react/20/solid'
 
 const features = [
+  {
+      name: 'FREE FOOD!',
+      description: 'Be the first ones to eat!',
+      icon: CheckBadgeIcon,
+    },
     {
       name: 'FREE MERCH!',
       description:
@@ -9,12 +14,7 @@ const features = [
     },
     {
       name: 'MEMBERSHIP PRIORITY!',
-      description: 'Applying to AfroTech & NSBE Nationals',
-      icon: CheckBadgeIcon,
-    },
-    {
-      name: 'FOOD!',
-      description: 'Be the first ones to eat... if not, we maybe be all out :(',
+      description: 'Application Priority',
       icon: CheckBadgeIcon,
     },
   ]

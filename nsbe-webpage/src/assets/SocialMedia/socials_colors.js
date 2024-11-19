@@ -11,17 +11,17 @@ const socialImgs = [
     },
     {
         img: "https://i.imgur.com/l8GB9zA.png",
-        link: "https://join.slack.com/t/nsbemembers/shared_invite/zt-2mmymfxhx-C2aNZUQxHrCfa2I4M1Lzdg",
+        link: "https://join.slack.com/t/nsbemembers/shared_invite/zt-2tubhomb7-AAXwyNg0wrWSqWtu1eUeYA",
         name: "Slack",
     },
     {
         img: "https://i.imgur.com/LvA8vFF.png",
-        link: "https://www.instagram.com/nsbe.official/",
+        link: "https://x.com/utnsbe",
         name: "X",
     },
     {
         img: "https://i.imgur.com/K7ZNRDu.png",
-        link: "https://www.instagram.com/nsbe.official/",
+        link: "https://www.facebook.com/groups/utnsbe/",
         name: "Facebook",
     },
 ]

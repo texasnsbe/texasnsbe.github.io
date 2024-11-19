@@ -15,7 +15,7 @@ export default function EventPhotos() {
     
       return (
         <>
-          <div className='relative flex w-full items-center pt-[14vh] py-[7vh]'>
+          <div className='relative flex w-full items-center py-[7vh]'>
             <MdChevronLeft className='opacity-50 cursor-pointer hover:opacity-100' onClick={slideLeft} size={40} />
               <div
                 id='slider'

@@ -11,7 +11,7 @@ export default function Footer() {
         <h1 className="text-4xl font-semibold">Get in Touch</h1>
         <div className="flex justify-center mx-auto mt-[5vh] max-w-lg items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5 ">
           {socials.map((socialImg) => (
-            <a href={socialImg.link}>
+            <a href={socialImg.link} target="_blank" rel="noopener noreferrer">
               <img
                 alt={socialImg.name}
                 src={socialImg.img}
@@ -20,8 +20,10 @@ export default function Footer() {
             </a>
           ))}
         </div>
-        <p className="mt-[3vh] font-bold text-black">📥 utnsbechair1@gmail.com</p>
-        <p className='font-bold'>©2024-2025 Texas NSBE. All rights reserved.</p>
+        <p className="mt-[3vh] font-bold text-black">
+          📥 utnsbechair1@gmail.com
+        </p>
+        <p className="font-bold">©2024-2025 Texas NSBE. All rights reserved.</p>
       </div>
     </div>
   );

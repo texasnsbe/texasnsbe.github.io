@@ -11,7 +11,7 @@ export default function SocialLinks() {
         </h1>
         <div className="grid grid-cols-5 max-md:grid-cols-1 mx-[13vw] gap-x-[5.5vw] gap-y-[5.5vh]">
           {socials.map((socialImg) => (
-            <a href={socialImg.link}>
+            <a href={socialImg.link} target="_blank" rel="noopener noreferrer">
               <img
                 alt={socialImg.name}
                 src={socialImg.img}

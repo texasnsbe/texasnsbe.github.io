@@ -12,16 +12,16 @@ import HornsRaiser from './Components/HornsRaiser';
 const App = () => {
   return (
     <>
-          <Navbar />
-          <HeroSect/>
-          <EventPhotos />
-          <HornsRaiser />
-          <GoogleCal />
-          <JoinSlack/>
-          <Meetings />
-          <DisplayPoints />
-          <PayDues />
-          <Footer />
+      <Navbar />
+      <HeroSect />
+      <GoogleCal />
+      <Meetings />
+      <HornsRaiser />
+      <DisplayPoints />
+      <JoinSlack />
+      <PayDues />
+      <EventPhotos />
+      <Footer />
     </>
   );
 };

@@ -41,7 +41,7 @@ export default function Navbar() {
               <Link
                 key={item.name}
                 to={item.to}
-                className="text-2xl font-semibold leading-6 hover:text-orange-600 transition-all hover:scale-125 duration-300 ease-out text-[#fff] text-300"
+                className="text-2xl font-semibold leading-6 hover:text-orange-600 transition-all hover:scale-125 duration-300 ease-out text-white  text-300"
               >
                 {item.name}
               </Link>
@@ -82,7 +82,7 @@ export default function Navbar() {
                     <Link
                       key={item.name}
                       to={item.to}
-                      className="-mx-3 block px-3 py-3 startm text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 transition-all hover:scale-105 duration-300 ease-out"
+                      className="-mx-3 block px-3 py-3 startm text-base font-semibold leading-7 text-gray-900 transition-all hover:scale-105 duration-300 ease-out"
                     >
                       {item.name}
                     </Link>
