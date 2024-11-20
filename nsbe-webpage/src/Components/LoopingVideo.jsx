@@ -1,6 +1,6 @@
 import React from "react";
 import video from "../assets/EventPhotos/NSBEEE.mp4"; // Adjust the path to your video file
-import image from "../assets/EventPhotos/EventImages/nsbe_jumbo_yellow.png"; // Add the path to your fallback image
+import image from "../assets/EventPhotos/EventImages/nsbe_jumbo.png"; // Add the path to your fallback image
 import { useMediaQuery } from "react-responsive";
 
 const LoopingVideo = () => {
