@@ -9,7 +9,7 @@ export default function SocialLinks() {
         <h1 className="herostyle tracking-tight transition-all hover:scale-105 duration-300 ease-out">
           CONTACT
         </h1>
-        <div className="grid grid-cols-5 max-md:grid-cols-1 mx-[13vw] gap-x-[5.5vw] gap-y-[5.5vh]">
+        <div className="grid grid-cols-5 max-md:grid-cols-2 mx-[13vw] gap-x-[5.5vw] gap-y-[5.5vh]">
           {socials.map((socialImg) => (
             <a href={socialImg.link} target="_blank" rel="noopener noreferrer">
               <img
