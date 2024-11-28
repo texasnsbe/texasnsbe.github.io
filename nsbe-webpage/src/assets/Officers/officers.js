@@ -18,8 +18,26 @@ import ashauntee_fairley from '../Officers/New_Officer_Photos/Ashauntee.jpg'
 import anna_martinez from '../Officers/New_Officer_Photos/Anna.jpg'
 import jorden_davis from '../Officers/New_Officer_Photos/Jorden.jpg'
 import joshua_chikosha from '../Officers/New_Officer_Photos/Joshua.jpg'
+import eden_gezehagn from '../Officers/New_Officer_Photos/Eden.jpg'
+import hunter_mack from '../Officers/New_Officer_Photos/Hunter.jpg'
 
 const officers = [
+  {
+    id: "Membership",
+    name: 'Hunter Mack',
+    role: 'Graduate Liaison',
+    linkedin: "https://www.linkedin.com/in/hunter-mack-582303168/",
+    imageUrl:
+      hunter_mack,
+  },
+  {
+    id: "Finance",
+    name: 'Eden Gezehagn',
+    role: 'Fundraising Chair',
+    linkedin: "https://www.linkedin.com/in/edengezehagn/",
+    imageUrl:
+      eden_gezehagn,
+  },
   {
     id: "Finance",
     name: 'Daniel Akinola',
