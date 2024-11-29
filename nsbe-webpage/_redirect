@@ -1,5 +1,0 @@
-/about   /about   200
-/contact /contact 200
-
-# Fallback for SPA routing
-/*       /index.html   200
