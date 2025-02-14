@@ -11,7 +11,7 @@ const socialImgs = [
     },
     {
         img: "https://i.imgur.com/uhRUrsD.png",
-        link: "https://join.slack.com/t/nsbemembers/shared_invite/zt-2tubhomb7-AAXwyNg0wrWSqWtu1eUeYA",
+        link: "https://join.slack.com/t/nsbemembers/shared_invite/zt-300d5xbgx-v4TAw44OKie8EYvkVZI_tA",
         name: "Slack",
     },
     {
