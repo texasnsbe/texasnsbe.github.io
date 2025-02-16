@@ -9,10 +9,10 @@ export default function HornsRaiser() {
             Build Community w/ Engineers
           </p>
           <h2 className="subheaderstyle text-gray-900 transition-all hover:scale-105 duration-300 ease-out mb-3">
-            E-Week is Coming!
+            E-Week is HERE!
           </h2>
           <a
-            href=""
+            href="https://join.slack.com/t/snapeweek2025/shared_invite/zt-2zoce5g0i-XlMwgJuwFH56SomE9iwBxg"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -14,9 +14,9 @@ const App = () => {
     <>
       <Navbar />
       <HeroSect />
+      <HornsRaiser />
       <GoogleCal />
       <Meetings />
-      <HornsRaiser />
       <DisplayPoints />
       <JoinSlack />
       <PayDues />
