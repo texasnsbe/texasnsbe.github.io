@@ -1,9 +1,15 @@
 import gbm8 from '../HomeEvents/GBMHeader/8gbm.png'
-import gbm5 from '../HomeEvents/GBMHeader/5gbm.png'
+import gbm9 from '../HomeEvents/GBMHeader/9gbm.png'
 import gbm7 from '../HomeEvents/GBMHeader/7gbm.png'
-import gbm3 from '../HomeEvents/GBMHeader/3gbm.png'
 
 const gbmposts = [
+   
+    {
+      title: '#9',
+      href: 'https://docs.google.com/presentation/d/1nsznIxOdqChrqpg7V7_JqUw0TwxRzeimBrUT8dfLi34/edit?usp=sharing',
+      date: 'Feb 25, 2025',
+      slideImg: gbm9,
+    },
   {
       title: '#8',
       href: 'https://docs.google.com/presentation/d/1TQy1BajRSA099TKPIaCEHu5KyluZXpl-6ksDa9arEoQ/edit?usp=sharing',

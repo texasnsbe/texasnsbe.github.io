@@ -14,7 +14,6 @@ const App = () => {
     <>
       <Navbar />
       <HeroSect />
-      <HornsRaiser />
       <GoogleCal />
       <Meetings />
       <DisplayPoints />
