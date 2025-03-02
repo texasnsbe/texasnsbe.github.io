@@ -1,4 +1,4 @@
-import gbmposts from "../assets/HomeEvents/gbm.js"
+import gbmposts from "../assets/HomeEvents/gbm.js";
 
 export default function Meetings() {
   return (
@@ -12,7 +12,12 @@ export default function Meetings() {
         </h2>
         <div className="grid grid-cols-3 max-lg:grid-cols-1 gap-x-8 gap-y-24">
           {gbmposts.map((post) => (
-            <a href={post.href} target="_blank" rel="noopener noreferrer">
+            <a
+              href={post.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              key={post.date}
+            >
               <article className="flex flex-col justify-between">
                 <div>
                   <time className="text-white font-semibold text-xl">
@@ -21,8 +26,10 @@ export default function Meetings() {
                 </div>
                 <div className="my-5">
                   <img
-                    className="max-lg:h-[40vh] max-lg:w-[60vw] max-md:h-[35vh] max-sm:h-[35vh] max-sm:w-[90vw] object-cover darkbg transition-all hover:scale-105 duration-300 ease-out rounded-2xl "
+                    className="max-lg:h-[40vh] max-lg:w-[60vw] max-md:h-[35vh] max-sm:h-[35vh] max-sm:w-[90vw] object-cover darkbg transition-all hover:scale-105 duration-300 ease-out rounded-2xl"
                     src={post.slideImg}
+                    loading="lazy"
+                    alt={post.title}
                   />
                 </div>
                 <div className="w-full text-black border-l-8 rounded-2xl darkbg border-orange-700 p-[2.5vh] bg-orange-50">
