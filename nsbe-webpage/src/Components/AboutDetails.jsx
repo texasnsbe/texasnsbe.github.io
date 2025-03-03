@@ -15,8 +15,8 @@ export default function AboutDetails() {
       <div className="mx-[9vw]">
         <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-y-16 lg:gap-x-16">
           <div className="flex flex-col justify-center items-center ">
-            <h1 className="text-center herostyle tracking-tight transition-all hover:scale-105 duration-300 ease-out">
-              ABOUT
+            <h1 className="text-center herostyle tracking-tight transition-all hover:scale-102 duration-300 ease-out">
+              OFFICERS
             </h1>
             <p className=" lg:w-[30vw] text-center text-black text-lg border-l-8 rounded-2xl darkbg border-orange-700 p-5 bg-orange-50 tracking-wide font-medium">
               <span className="text-xl inline-block rounded-md pl-2 pr-1 startl">

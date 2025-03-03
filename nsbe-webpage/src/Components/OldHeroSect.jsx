@@ -19,10 +19,10 @@ export default function OldHeroSect() {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
               <a
-                href="/about"
+                href="/officers"
                 className="transition-all tracking-wider hover:scale-105 buttondarkbg rounded-lg px-8 py-2.5 startm font-semibold hover:bg-orange-700 hover:text-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
-                About Us
+                Officers
               </a>
             </div>
           </div>
