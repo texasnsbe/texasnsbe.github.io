@@ -1,9 +1,16 @@
 import gbm8 from '../HomeEvents/GBMHeader/8gbm.png'
 import gbm9 from '../HomeEvents/GBMHeader/9gbm.png'
-import gbm7 from '../HomeEvents/GBMHeader/7gbm.png'
+import gbm10 from '../HomeEvents/GBMHeader/10gbm.png'
+
 
 const gbmposts = [
    
+  {
+      title: '#10',
+      href: 'https://docs.google.com/presentation/d/1OzeG6G5KiSSlMaQ5ZN3GWknY4zylpdNeRHnW1p70z9I/edit?usp=sharing',
+      date: 'Mar 11, 2025',
+      slideImg: gbm10,
+    },
     {
       title: '#9',
       href: 'https://docs.google.com/presentation/d/1nsznIxOdqChrqpg7V7_JqUw0TwxRzeimBrUT8dfLi34/edit?usp=sharing',
@@ -16,12 +23,7 @@ const gbmposts = [
       date: 'Feb 11, 2025',
       slideImg: gbm8,
     },  
-  {
-      title: '#7',
-      href: 'https://docs.google.com/presentation/d/1nogjDUdVo4v77MWYXBlM-7GLpqwIj3IHkMaQCYo6bmc/edit?usp=sharing',
-      date: 'Jan 28, 2025',
-      slideImg: gbm7,
-    },
+  
     
     // {
     //   title: '#8',
