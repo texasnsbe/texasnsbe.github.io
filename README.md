@@ -137,7 +137,7 @@ For technical questions or contribution guidelines:
 
 - LinkedIn: [kevinuduji](https://www.linkedin.com/in/kevinuduji/)
 - GitHub: [kevinuduji](https://github.com/kevinuduji)
-- - Email: kevinuduji@gmail.com
+- Email: kevinuduji@gmail.com
 
 **NSBE UT Chapter**
 
