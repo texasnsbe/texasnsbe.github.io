@@ -135,15 +135,16 @@ For technical questions or contribution guidelines:
 
 **Kevin Uduji** - Telecommunications Chair & Lead Developer
 
-- Email: utnsbechair1@gmail.com
 - LinkedIn: [kevinuduji](https://www.linkedin.com/in/kevinuduji/)
 - GitHub: [kevinuduji](https://github.com/kevinuduji)
+- - Email: kevinuduji@gmail.com
 
 **NSBE UT Chapter**
 
 - Website: [Official NSBE UT Site]
 - Instagram: [@texasnsbe](https://www.instagram.com/texasnsbe)
 - LinkedIn: [NSBE UT](https://www.linkedin.com/company/utnsbe/)
+- Email: utnsbechair1@gmail.com
 
 ## License
 
