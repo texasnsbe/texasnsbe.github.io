@@ -33,7 +33,7 @@ export default function Footer() {
               <span className="relative inline-block group">
                 <img
                   alt={`${socialImg.name} shadow`}
-                  src={socialsGrayscale[index]?.img || socialImg.img}
+                  src={(socialsGrayscale[index] && socialsGrayscale[index].img) ? socialsGrayscale[index].img : socialImg.img}
                   className={`${classDef} absolute top-0 left-0 translate-x-1 translate-y-1 opacity-80 pointer-events-none select-none`}
                   aria-hidden="true"
                 />
