@@ -77,7 +77,8 @@ export default function EventPhotos() {
                   src={item}
                   alt={`NSBE Event Photo ${index + 1}`}
                   width={512}
-                  height={288}
+                  width={EVENT_PHOTO_WIDTH}
+                  height={EVENT_PHOTO_HEIGHT}
                   {...IMAGE_PRESETS.eventPhoto}
                 />
               ))}
