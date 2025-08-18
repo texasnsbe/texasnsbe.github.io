@@ -1,3 +1,14 @@
+/**
+ * PayDues Component
+ *
+ * Displays the membership dues section with pricing ($25), benefits breakdown,
+ * and a call-to-action link to the payment form. Features a responsive layout
+ * with benefits list and T-shirt preview image. Benefits include free food,
+ * merchandise, and membership priority.
+ *
+ * @component
+ * @returns {JSX.Element} Dues payment section with benefits and pricing
+ */
 import due_benefits from "../Assets/Dues/due_benefits.js";
 import tshirt from "../Assets/Dues/Tshirt.jpg";
 

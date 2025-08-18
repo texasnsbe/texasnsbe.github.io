@@ -1,3 +1,14 @@
+/**
+ * EventPhotos Component
+ *
+ * A horizontal scrolling gallery of NSBE event photos with navigation arrows.
+ * Users can scroll through images manually or use the left/right chevron buttons
+ * to navigate. Images are optimized for performance with lazy loading and
+ * dragging is disabled to prevent interference with scroll navigation.
+ *
+ * @component
+ * @returns {JSX.Element} Horizontal scrolling photo gallery with navigation
+ */
 import images from "../Assets/EventPhotos/event_photos.js";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 

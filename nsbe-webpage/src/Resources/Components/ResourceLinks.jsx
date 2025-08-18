@@ -1,3 +1,13 @@
+/**
+ * ResourceLinks Component
+ *
+ * Displays a grid of resource links for NSBE members including newsletters,
+ * QR codes, test bank, resume drop, dues payment, and funding options.
+ * Each resource is presented as a clickable card with header and description.
+ *
+ * @component
+ * @returns {JSX.Element} Grid layout of NSBE resource links and information
+ */
 import resources from "../Assets/resources.js";
 
 export default function ResourceLinks() {
