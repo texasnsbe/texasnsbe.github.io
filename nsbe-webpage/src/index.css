@@ -55,7 +55,11 @@ html{
     background-color: #bf5600ad;
 }
 
-/* Corrected invalid size declaration and centralized paragraph styling */
+/* 
+  Previously, 'font-size' was set to '16' (missing unit), which is invalid CSS.
+  Changed to '1rem' for validity and to match the design system.
+  Centralized paragraph styling here for consistency across the app.
+*/
 p {
     font-size: 1rem;
     line-height: 1.5rem;
