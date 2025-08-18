@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,7 +7,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins';
+    font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 html{
@@ -15,67 +18,326 @@ html{
 }
 
 /*
-  Design Tokens
-  - These CSS custom properties define app-wide scales independent of viewport size.
-  - Prefer using Tailwind utilities and component classes; fall back to these as needed.
+  NSBE Design System - Design Tokens
+  - Centralized design tokens for consistency across the application
 */
 :root {
-    /* Text sizing base (do not tie to viewport) */
+    /* Brand Colors */
+    --color-primary: #c2410c;      /* orange-700 */
+    --color-primary-hover: #ea580c; /* orange-600 */
+    --color-primary-light: #fed7aa; /* orange-200 */
+    --color-primary-bg: #fff7ed;    /* orange-50 */
+    
+    /* Text Colors */
+    --color-text-primary: #111827;   /* gray-900 */
+    --color-text-secondary: #374151; /* gray-700 */
+    --color-text-inverse: #ffffff;
+    
+    /* Background Colors */
+    --color-bg-primary: #ffffff;
+    --color-bg-secondary: #f9fafb;   /* gray-50 */
+    --color-bg-overlay: rgba(0, 0, 0, 0.9);
+    
+    /* Legacy tokens - being phased out */
     --font-size-base: 16px;
-
-    /* Text shadow scales with font size via em */
     --text-shadow-offset: 0.1em;
-
-    /* Stroke widths scale with font size */
     --text-stroke-thin: 0.03em;
     --text-stroke: 0.05em;
     --text-stroke-thick: 0.08em;
-
-    /* Card/button elevations in rem so they are device-consistent */
     --elevation-offset-sm: 0.4rem;
     --elevation-offset-md: 0.75rem;
     --outline-width-sm: 0.1rem;
     --outline-width-md: 0.15rem;
-
     --elevation-color: #000000;
 }
 
 @layer base {
     body {
-        background-color: #ffffff;
-        background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 0C6.716 0 0 6.716 0 15c8.284 0 15-6.716 15-15zM0 15c0 8.284 6.716 15 15 15 0-8.284-6.716-15-15-15zm30 0c0-8.284-6.716-15-15-15 0 8.284 6.716 15 15 15zm0 0c0 8.284-6.716 15-15 15 0-8.284 6.716-15 15-15z' fill='%23b9730f' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+        background-color: #ffffff; /* white base */
+        background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 0C6.716 0 0 6.716 0 15c8.284 0 15-6.716 15-15zM0 15c0 8.284 6.716 15 15 15 0-8.284-6.716-15-15-15zm30 0c0-8.284-6.716-15-15-15 0 8.284 6.716 15 15 15zm0 0c0 8.284-6.716 15-15 15 0-8.284 6.716-15 15-15z' fill='%23000000' fill-opacity='0.2' fill-rule='evenodd'/%3E%3C/svg%3E");
+        position: relative;
+    }
+    
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(64, 64, 64, 0.6) 50%, rgba(0, 0, 0, 0.7) 100%);
+        backdrop-filter: blur(1px);
+        pointer-events: none;
+        z-index: -1;
+    }
+    
+    p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: #374151; /* gray-700 */
     }
 }
 
-.base-bg {
-    background-color: #fff;
+@layer components {
+    /* =============================================================================
+       NSBE DESIGN SYSTEM - COMPONENT LIBRARY
+       ============================================================================= */
+
+    /* Section Containers */
+    .section {
+        @apply py-16 md:py-20 lg:py-24;
+    }
+
+    .section-sm {
+        @apply py-12 md:py-16;
+    }
+
+    .section-lg {
+        @apply py-20 md:py-28 lg:py-32;
+    }
+
+    /* Content Containers */
+    .container-content {
+        @apply mx-auto max-w-7xl px-6 lg:px-8;
+    }
+
+    .container-narrow {
+        @apply mx-auto max-w-4xl px-6 lg:px-8;
+    }
+
+    /* Typography System */
+    .heading-hero {
+        @apply font-bold text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl;
+        @apply tracking-wider text-center leading-tight md:leading-tight lg:leading-none;
+        @apply transition-transform duration-300 ease-out hover:scale-105;
+        font-family: 'Rubik', sans-serif;
+        color: var(--color-text-primary);
+        text-shadow: var(--text-shadow-offset) var(--text-shadow-offset) 0 #000;
+        -webkit-text-fill-color: var(--color-text-inverse);
+        letter-spacing: 0.1em;
+        margin-bottom: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    .heading-section {
+        @apply font-bold text-3xl md:text-4xl lg:text-5xl xl:text-6xl;
+        @apply tracking-wide leading-tight;
+        @apply transition-transform duration-300 ease-out hover:scale-105;
+        font-family: 'Rubik', sans-serif;
+        color: var(--color-text-primary);
+        text-shadow: var(--text-shadow-offset) var(--text-shadow-offset) 0 #000;
+        -webkit-text-fill-color: var(--color-text-inverse);
+        margin-bottom: 1rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+
+    .heading-subsection {
+        @apply font-semibold text-xl md:text-2xl lg:text-3xl;
+        @apply tracking-wider text-gray-900 leading-relaxed;
+        font-family: 'Rubik', sans-serif;
+        margin-bottom: 0.75rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+
+    .text-body {
+        @apply text-lg md:text-xl leading-relaxed text-gray-700;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    /* Enhanced Image Classes for Better Performance */
+    .image-optimized {
+        @apply w-full h-auto object-cover;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+
+    .image-gallery {
+        @apply object-cover transition-transform duration-300 ease-out hover:scale-105;
+        @apply pointer-events-none select-none;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: optimize-contrast;
+    }
+
+    .image-profile {
+        @apply object-cover transition-transform duration-300 ease-out hover:scale-105;
+        @apply select-none rounded-full;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: optimize-contrast;
+    }
+
+    .image-hero {
+        @apply w-full h-auto object-cover object-center;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: optimize-contrast;
+    }
+
+    .image-social-icon {
+        @apply object-contain transition-transform duration-300 ease-out hover:scale-110;
+        @apply select-none;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: optimize-contrast;
+    }
+
+    /* Card System */
+    .card {
+        @apply relative rounded-2xl;
+        @apply border-l-8 border-orange-700;
+        @apply bg-orange-50 p-6;
+        @apply transition-transform duration-300 ease-out hover:scale-105;
+        filter: contrast(1.1) saturate(1.15);
+    }
+
+    .card-image {
+        @apply relative rounded-2xl;
+        @apply transition-transform duration-300 ease-out hover:scale-105;
+        filter: contrast(1.1) saturate(1.15);
+    }
+
+    /* Button System */
+    .btn-primary {
+        @apply inline-flex items-center justify-center;
+        @apply rounded-3xl px-8 py-3;
+        @apply font-semibold text-white;
+        @apply bg-orange-700 hover:bg-orange-600;
+        @apply transition-all duration-300 ease-out hover:scale-105;
+        @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2;
+        font-family: 'Rubik', sans-serif;
+        box-shadow: var(--elevation-offset-sm) var(--elevation-offset-sm) var(--elevation-color);
+        outline: var(--elevation-color) solid var(--outline-width-sm);
+    }
+
+    .btn-secondary {
+        @apply inline-flex items-center justify-center;
+        @apply rounded-3xl px-8 py-3;
+        @apply font-semibold text-orange-700;
+        @apply bg-white border-2 border-orange-700;
+        @apply hover:bg-orange-50;
+        @apply transition-all duration-300 ease-out hover:scale-105;
+        @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    /* Grid System */
+    .grid-responsive {
+        @apply grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 lg:gap-16;
+    }
+
+    .grid-responsive-3 {
+        @apply grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 lg:grid-cols-3 lg:gap-16;
+    }
+
+    /* Interactive Elements */
+    .interactive-hover {
+        @apply transition-all duration-300 ease-out hover:scale-105;
+    }
+
+    .interactive-lift {
+        @apply transition-transform duration-300 ease-out hover:scale-110;
+    }
+
+    /* Navigation */
+    .nav-link {
+        @apply text-lg font-semibold leading-6;
+        @apply text-white hover:text-orange-400;
+        @apply transition-all duration-300 ease-out hover:scale-110;
+        @apply whitespace-nowrap;
+    }
+
+    .nav-mobile-link {
+        @apply w-full text-left block px-3 py-3;
+        @apply text-base font-semibold leading-7;
+        @apply text-white hover:text-orange-400;
+        @apply transition-all duration-200 ease-out hover:scale-[1.02];
+    }
+
+    /* Footer */
+    .footer-container {
+        @apply py-16 px-6 md:px-12 lg:px-16 text-center;
+        color: var(--color-text-primary);
+        font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+
+    .footer-title {
+        @apply text-4xl font-semibold mb-8;
+        text-shadow: var(--text-shadow-offset) var(--text-shadow-offset) 0 #000;
+        color: var(--color-text-primary);
+        -webkit-text-fill-color: var(--color-text-inverse);
+        filter: drop-shadow(0 0.35rem 0.6rem rgba(0, 0, 0, 0.25));
+    }
+
+    .footer-social-grid {
+        @apply flex flex-wrap justify-center mx-auto mt-8 max-w-lg;
+        @apply items-center gap-6 sm:gap-8;
+        @apply sm:max-w-xl lg:mx-0 lg:max-w-none;
+    }
+
+    .footer-social-icon {
+        @apply relative inline-block;
+        @apply transition-transform duration-300 ease-out group-hover:scale-125;
+        @apply h-10 w-10 sm:h-12 sm:w-12 object-contain;
+    }
+
+    /* Legacy classes - DEPRECATED but maintained for backwards compatibility */
+    .darkbg {
+        @apply card-image;
+    }
+
+    .buttondarkbg {
+        @apply btn-primary;
+    }
+
+    .herostyle {
+        @apply heading-hero;
+    }
+
+    .subheaderstyle {
+        @apply heading-section;
+    }
+
+    .miniheader {
+        @apply heading-subsection;
+    }
+
+    /* Keep existing functional classes */
+    .navstyle {
+        @apply relative m-5 p-5;
+        @apply bg-white rounded-2xl;
+        @apply font-bold text-xl text-black;
+        text-shadow: var(--text-shadow-offset) var(--text-shadow-offset) 0 #000;
+    }
 }
 
-.purple-bg {
-    background-color: #bf5600ad;
+@layer utilities {
+    /* Utility classes */
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Brand Shadow Effect - replaces darkbg class */
+    .style-brand-shadow {
+        filter: contrast(1.1) saturate(1.15);
+    }
+
+    /* Button Brand Effect - replaces buttondarkbg class */
+    .btn-brand-shadow {
+        box-shadow: var(--elevation-offset-sm) var(--elevation-offset-sm) var(--elevation-color);
+        outline: var(--elevation-color) solid var(--outline-width-sm);
+    }
 }
 
-/* 
-  Previously, 'font-size' was set to '16' (missing unit), which is invalid CSS.
-  Changed to '1rem' for validity and to match the design system.
-  Centralized paragraph styling here for consistency across the app.
-*/
-p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-}
-
-/* Navigation text style */
-.navstyle {
-    font-family: 'Poppins';
-    color: #000;
-    font-weight: bold;
-    font-size: 1.25rem;
-    text-shadow: var(--text-shadow-offset) var(--text-shadow-offset) 0 #000;
-}
-
+/* Legacy styles - to be gradually replaced */
 .startl {
-    font-family: 'Poppins';
+/* DEPRECATED: Use standardized classes with 'Rubik' font instead of .startl */
+.startl {
+    font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     position: relative;
     color: #000;
     font-weight: bold;
@@ -118,71 +380,8 @@ p {
     -webkit-text-fill-color: #ffef15;
 }
 
-.herostyle {
-    font-family: 'Poppins';
-    color: #000;
-    font-weight: bold;
-    text-align: center;
-    /* Responsive but bounded font size */
-    font-size: clamp(2rem, 6vw, 5rem);
-    text-shadow: var(--text-shadow-offset) var(--text-shadow-offset) 0 #000;
-    -webkit-text-fill-color: #ffffff;
-}
-
-p {
-    color: #fff;
-}
-
-.miniheader{
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
-}
-
-.subheaderstyle {
-    font-family: 'Poppins';
-    color: #000;
-    font-weight: bold;
-    font-size: clamp(1.5rem, 4.5vw, 3rem);
-    text-shadow: var(--text-shadow-offset) var(--text-shadow-offset) 0 #000;
-    -webkit-text-fill-color: #ffffff;
-}
-
-.darkbg {
-    position: relative;
-    color: #000000;
-    box-shadow: var(--elevation-offset-md) var(--elevation-offset-md) var(--elevation-color);
-    outline: var(--elevation-color) solid var(--outline-width-md);
-    border-radius: 25px;
-}
-
-.buttondarkbg {
-    position: relative;
-    color: #ffffff;
-    background-color: #ffef15;
-    box-shadow: var(--elevation-offset-sm) var(--elevation-offset-sm) var(--elevation-color);
-    outline: var(--elevation-color) solid var(--outline-width-sm);
-}
-
-.navstyle {
-    position: relative;
-    margin: 1.25rem;
-    padding: 20px;
-    background-color: #ffffff;
-    outline: var(--elevation-color) solid var(--outline-width-md);
-    box-shadow: var(--elevation-offset-md) var(--elevation-offset-md) var(--elevation-color);
-    border-radius: 25px;
-}
-
-.scrollbar-hide::-webkit-scrollbar {
-    display: none;
-}
-  
-  .scrollbar-hide {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-}
-
+/* Media Queries for responsiveness */
 @media (max-width: 1024px) {
-
     .about-padding{
         padding-top: 12rem;
     }
@@ -190,14 +389,9 @@ p {
     .hero-padding{
         padding-bottom: 10%;
     }
-
-    .headerstyle {
-        font-size: 6rem;
-    }
 }
 
 @media (max-width: 768px) {
-
     .startl {
         font-size: 3rem;
     }
@@ -211,9 +405,7 @@ p {
     }
 }
 
-/* Media Queries for responsiveness */
 @media (max-width: 640px) {
-
     .startl {
         font-size: 2rem;
     }
@@ -225,12 +417,9 @@ p {
     .start-topv-title {
         font-size: 3rem;
     }
-
 }
 
-/* Media Queries for responsiveness */
 @media (max-width: 320px) {
-
     .startl {
         font-size: 1.5rem;
     }

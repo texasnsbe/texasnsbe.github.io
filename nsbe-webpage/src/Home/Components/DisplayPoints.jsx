@@ -8,23 +8,48 @@
  * @component
  * @returns {JSX.Element} Embedded leaderboard showing most active NSBE members
  */
+import {
+  SECTION_SPACING,
+  CONTAINERS,
+  TYPOGRAPHY,
+  RESPONSIVE_SIZES,
+  INTERACTIVE,
+} from "../../styles/constants";
+
 export default function DisplayPoints() {
   return (
-    <>
-      <div className="flex justify-center py-[5vh]">
-        <div className="flex flex-col">
-          <p className="miniheader sm:text-xl font-semibold tracking-wider leading-relaxed text-black">
-            Most Active Members!
-          </p>
-          <h2 className="subheaderstyle text-gray-900 transition-all hover:scale-105 duration-300 ease-out mb-3">
-            Leaderboard
-          </h2>
+    <div className={SECTION_SPACING.md}>
+      <div className={CONTAINERS.default}>
+        <div className="flex flex-col items-center space-y-4">
+          <div className="text-center space-y-3">
+            <p
+              className={TYPOGRAPHY.subsectionTitle}
+              style={{ textTransform: "uppercase", letterSpacing: "0.08em" }}
+            >
+              MOST ACTIVE MEMBERS!
+            </p>
+            <h2
+              className={`${TYPOGRAPHY.sectionTitle} text-white`}
+              style={{
+                fontFamily: "Rubik, sans-serif",
+                textShadow:
+                  "0.1em 0.1em 0 #000, 0.2em 0.2em 0.1em rgba(0,0,0,0.3)",
+                WebkitTextFillColor: "#ffffff",
+                textTransform: "uppercase",
+                letterSpacing: "0.06em",
+              }}
+            >
+              LEADERBOARD
+            </h2>
+          </div>
+
           <iframe
             src="https://script.google.com/macros/s/AKfycbyNfzaTwzEEDc45ZqGRdDVbjS2XCpv2cn8KLFxG_rgPKd8Qt9EH5mYJWWTsO92d0qaD/exec"
-            className="h-[73vh] w-[60vw] max-lg:h-[40vh] max-md:h-[35vh] max-sm:h-[35vh] max-sm:w-[90vw] darkbg transition-all hover:scale-105 duration-300 ease-out"
+            className={`${RESPONSIVE_SIZES.iframe.default} ${INTERACTIVE.hover} rounded-2xl style-brand-shadow`}
+            title="NSBE Member Leaderboard"
           />
         </div>
       </div>
-    </>
+    </div>
   );
 }

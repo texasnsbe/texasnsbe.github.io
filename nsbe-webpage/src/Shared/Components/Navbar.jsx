@@ -3,16 +3,14 @@
  *
  * Responsive, sticky navigation that adapts its items based on the current route
  * and the sections visible in the viewport. Uses Headless UI for the mobile menu.
- *
- * Sizing conventions:
- * - Icons: prefer `.icon-sm|md|lg` classes for consistent icon sizing.
- * - Buttons: prefer `.btn` with `.btn-sm|md|lg` and color variants like `.btn-primary`.
+ * Now uses standardized design constants for consistent styling.
  */
 import { useState, useEffect, useRef, useMemo } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../Assets/TexasNSBE_logo_white.png";
+import { NAVIGATION, ICON_SIZES, INTERACTIVE } from "../../styles/constants";
 
 /** Sections composing the Home page, in vertical order. */
 const HOME_COMPONENTS = [
@@ -20,7 +18,6 @@ const HOME_COMPONENTS = [
   { name: "Calendar", id: "calendar" },
   { name: "GBM", id: "meetings" },
   { name: "Points", id: "points" },
-  { name: "Slack", id: "slack" },
   { name: "Dues", id: "dues" },
   { name: "Photos", id: "photos" },
 ];
@@ -118,9 +115,13 @@ export default function Navbar() {
               }}
             >
               <img
-                alt=""
+                alt="NSBE Logo"
                 src={logo}
-                className="h-15 w-auto transition-all hover:scale-125 duration-300 ease-out"
+                className={`h-15 w-auto ${INTERACTIVE.hover} ${INTERACTIVE.lift}`}
+                width={200}
+                height={60}
+                loading="eager"
+                decoding="sync"
               />
             </Link>
           </div>
@@ -140,7 +141,7 @@ export default function Navbar() {
                     element.scrollIntoView({ behavior: "smooth" });
                   }
                 }}
-                className="text-lg font-semibold leading-6 text-white hover:text-orange-400 transition-all hover:scale-110 duration-300 ease-out whitespace-nowrap"
+                className={NAVIGATION.link}
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
                 {item.name}
@@ -155,7 +156,7 @@ export default function Navbar() {
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
             >
               <span className="sr-only">Open main menu</span>
-              <Bars3Icon aria-hidden="true" className="icon-lg" />
+              <Bars3Icon aria-hidden="true" className={ICON_SIZES.lg} />
             </button>
           </div>
 
@@ -184,7 +185,7 @@ export default function Navbar() {
                 className="-m-2.5 rounded-md p-2.5 text-white"
               >
                 <span className="sr-only">Close menu</span>
-                <XMarkIcon aria-hidden="true" className="icon-md" />
+                <XMarkIcon aria-hidden="true" className={ICON_SIZES.md} />
               </button>
             </div>
             <div className="mt-6 flow-root">
@@ -200,7 +201,7 @@ export default function Navbar() {
                         }
                         setMobileMenuOpen(false);
                       }}
-                      className="w-full text-left -mx-3 block px-3 py-3 text-base font-semibold leading-7 text-white transition-all hover:scale-[1.02] duration-200 ease-out hover:text-orange-400"
+                      className={NAVIGATION.mobileLink}
                     >
                       {item.name}
                     </button>

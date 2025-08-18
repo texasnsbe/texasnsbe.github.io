@@ -24,16 +24,28 @@ const App = () => {
         <HeroSect />
       </div>
       <div id="calendar">
-        <GoogleCal />
+        {/* Horizontal flex container for Calendar and Slack components */}
+        <div className="py-8">
+          <div className="mx-auto max-w-6xl px-4 lg:px-6">
+            <div className="flex flex-col lg:flex-row lg:gap-6 lg:items-start space-y-8 lg:space-y-0">
+              {/* Calendar component - takes up one vertical flex box */}
+              <div className="flex-1 min-w-0">
+                <GoogleCal />
+              </div>
+
+              {/* Slack component - takes up one vertical flex box */}
+              <div className="flex-1 min-w-0">
+                <JoinSlack />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div id="meetings">
         <Meetings />
       </div>
       <div id="points">
         <DisplayPoints />
-      </div>
-      <div id="slack">
-        <JoinSlack />
       </div>
       <div id="dues">
         <PayDues />
