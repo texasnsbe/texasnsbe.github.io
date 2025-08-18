@@ -14,9 +14,21 @@
   margin-bottom: 20px;
 }
 
+.footer-title-shadow {
+  text-shadow: var(--text-shadow-offset) var(--text-shadow-offset) 0 #000;
+  color: #000;
+  -webkit-text-fill-color: #ffffff;
+}
+
+/* Soft lift for footer elements */
+.footer-soft-lift {
+  filter: drop-shadow(0 0.35rem 0.6rem rgba(0, 0, 0, 0.25));
+}
+
 .footer p {
   margin-bottom: 40px;
   font-size: 1em;
+  text-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.3);
 }
 
 .social-links a {

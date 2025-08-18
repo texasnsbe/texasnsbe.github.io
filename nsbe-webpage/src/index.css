@@ -14,6 +14,32 @@ html{
     scroll-behavior:smooth;
 }
 
+/*
+  Design Tokens
+  - These CSS custom properties define app-wide scales independent of viewport size.
+  - Prefer using Tailwind utilities and component classes; fall back to these as needed.
+*/
+:root {
+    /* Text sizing base (do not tie to viewport) */
+    --font-size-base: 16px;
+
+    /* Text shadow scales with font size via em */
+    --text-shadow-offset: 0.1em;
+
+    /* Stroke widths scale with font size */
+    --text-stroke-thin: 0.03em;
+    --text-stroke: 0.05em;
+    --text-stroke-thick: 0.08em;
+
+    /* Card/button elevations in rem so they are device-consistent */
+    --elevation-offset-sm: 0.4rem;
+    --elevation-offset-md: 0.75rem;
+    --outline-width-sm: 0.1rem;
+    --outline-width-md: 0.15rem;
+
+    --elevation-color: #000000;
+}
+
 @layer base {
     body {
         background-color: #ffffff;
@@ -29,75 +55,77 @@ html{
     background-color: #bf5600ad;
 }
 
+/* 
+  Previously, 'font-size' was set to '16' (missing unit), which is invalid CSS.
+  Changed to '1rem' for validity and to match the design system.
+  Centralized paragraph styling here for consistency across the app.
+*/
 p {
-    size: 5rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
+/* Navigation text style */
 .navstyle {
     font-family: 'Poppins';
-    color: #000; /* Primary text color */
-    font-weight: bold; /* Bold text */
-    font-size: 1.25rem; /* Font size */
-    text-shadow: -.5px -.5px 0 #000, .5px -.5px 0 #000, -.5px .5px 0 #000, .2rem .2rem 0 #000;
-    -webkit-text-fill-color: #bf5600;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-shadow: var(--text-shadow-offset) var(--text-shadow-offset) 0 #000;
 }
 
 .startl {
     font-family: 'Poppins';
     position: relative;
-    color: #000; /* Primary text color */
-    font-weight: bold; /* Bold text */
-    font-size: 1.5rem; /* Font size */
-    text-shadow: -.3px -.3px 0 #000, .3px -.3px 0 #000, -.3px .3px 0 #000, .23rem .23rem 0 #000;
-    -webkit-text-fill-color: transparent ;
-    -webkit-text-stroke: .07rem;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-shadow: var(--text-shadow-offset) var(--text-shadow-offset) 0 #000;
+    -webkit-text-fill-color: transparent;
     -webkit-text-fill-color: #fff;
 }
 
 .startm {
     font-family: 'Poppins';
     position: relative;
-    color: #000; /* Primary text color */
-    font-weight: bold; /* Bold text */
-    font-size: 1.3rem; /* Font size */
-    text-shadow: -.3px -.3px 0 #000, .3px -.3px 0 #000, -.3px .3px 0 #000, .18rem .18rem 0 #000;
-    -webkit-text-fill-color: transparent ;
-    -webkit-text-stroke: .04rem;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-shadow: var(--text-shadow-offset) var(--text-shadow-offset) 0 #000;
+    -webkit-text-fill-color: transparent;
     -webkit-text-fill-color: #fff;
 }
 
 .start-topv-title {
     font-family: 'Poppins';
     position: relative;
-    color: #000; /* Primary text color */
-    font-weight: bold; /* Bold text */
-    font-size: 2.5rem; /* Font size */
-    text-shadow: -.3px -.3px 0 #000, .3px -.3px 0 #000, -.3px .3px 0 #000, .23rem .23rem 0 #000;
-    -webkit-text-fill-color: transparent ;
-    -webkit-text-stroke: .07rem;
+    color: #000;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-shadow: var(--text-shadow-offset) var(--text-shadow-offset) 0 #000;
+    -webkit-text-fill-color: transparent;
     -webkit-text-fill-color: #ffef15;
 }
 
 .start-title {
     font-family: 'Poppins';
     position: relative;
-    color: #000; /* Primary text color */
-    font-weight: bold; /* Bold text */
-    font-size: 1.15rem; /* Font size */
-    text-shadow: -.3px -.3px 0 #000, .3px -.3px 0 #000, -.3px .3px 0 #000, .18rem .18rem 0 #000;
-    -webkit-text-fill-color: transparent ;
-    -webkit-text-stroke: .02rem;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.15rem;
+    text-shadow: var(--text-shadow-offset) var(--text-shadow-offset) 0 #000;
+    -webkit-text-fill-color: transparent;
     -webkit-text-fill-color: #ffef15;
 }
 
 .herostyle {
     font-family: 'Poppins';
-    color: #000; /* Primary text color */
-    font-weight: bold; /* Bold text */
+    color: #000;
+    font-weight: bold;
     text-align: center;
-    font-size: 8.5vw;/* Font size */
-    text-shadow: .7vw .7vw #000;
-    -webkit-text-stroke: .05vw;
+    /* Responsive but bounded font size */
+    font-size: clamp(2rem, 6vw, 5rem);
+    text-shadow: var(--text-shadow-offset) var(--text-shadow-offset) 0 #000;
     -webkit-text-fill-color: #ffffff;
 }
 
@@ -106,34 +134,32 @@ p {
 }
 
 .miniheader{
-    font-size: 2.75vw;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
 
 .subheaderstyle {
     font-family: 'Poppins';
-    color: #000; /* Primary text color */
-    font-weight: bold; /* Bold text */
-    font-size: 6vw; /* Font size */
-    text-shadow: .5vw .6vh #000;
-    -webkit-text-stroke: .05vw;
+    color: #000;
+    font-weight: bold;
+    font-size: clamp(1.5rem, 4.5vw, 3rem);
+    text-shadow: var(--text-shadow-offset) var(--text-shadow-offset) 0 #000;
     -webkit-text-fill-color: #ffffff;
 }
 
 .darkbg {
     position: relative;
     color: #000000;
-    box-shadow: .75vw .75vw #000000;
-    outline: #000000 solid .15vw;
+    box-shadow: var(--elevation-offset-md) var(--elevation-offset-md) var(--elevation-color);
+    outline: var(--elevation-color) solid var(--outline-width-md);
     border-radius: 25px;
-    
 }
 
 .buttondarkbg {
     position: relative;
     color: #ffffff;
     background-color: #ffef15;
-    box-shadow: .4vw .4vw #000000;
-    outline: #000000 solid .1vw;
+    box-shadow: var(--elevation-offset-sm) var(--elevation-offset-sm) var(--elevation-color);
+    outline: var(--elevation-color) solid var(--outline-width-sm);
 }
 
 .navstyle {
@@ -141,8 +167,8 @@ p {
     margin: 1.25rem;
     padding: 20px;
     background-color: #ffffff;
-    outline:solid .15vw;
-    box-shadow: .75vw .75vw #000000;
+    outline: var(--elevation-color) solid var(--outline-width-md);
+    box-shadow: var(--elevation-offset-md) var(--elevation-offset-md) var(--elevation-color);
     border-radius: 25px;
 }
 
