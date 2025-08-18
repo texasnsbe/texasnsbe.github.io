@@ -1,3 +1,15 @@
+/**
+ * Social Media Links with Colored Icons
+ *
+ * Contains an array of NSBE's social media platforms with their colored icon URLs
+ * and corresponding links. These are used in the footer and other social media
+ * sections to display clickable social media icons in full color.
+ *
+ * @constant {Array<Object>} socialImgs - Array of social media platform objects
+ * @property {string} name - Name of the social media platform
+ * @property {string} img - URL to the colored icon image
+ * @property {string} link - URL to the NSBE's profile on that platform
+ */
 import emailLogo from "../email_logo.png";
 
 const socialImgs = [

@@ -1,3 +1,13 @@
+/**
+ * GoogleCal Component
+ *
+ * Embeds the NSBE Google Calendar in an iframe to display all scheduled events.
+ * The calendar is configured to show a clean view without navigation controls
+ * and is styled to be responsive across different screen sizes.
+ *
+ * @component
+ * @returns {JSX.Element} Embedded Google Calendar showing NSBE events
+ */
 export default function GoogleCal() {
   return (
     <>
@@ -17,4 +27,4 @@ export default function GoogleCal() {
       </div>
     </>
   );
-};
+}

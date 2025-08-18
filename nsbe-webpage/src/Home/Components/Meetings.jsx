@@ -1,3 +1,13 @@
+/**
+ * Meetings Component
+ *
+ * Displays a grid of recent General Body Meeting (GBM) posts with links to
+ * presentation slides. Each meeting card shows the date, thumbnail image,
+ * and title. Links open in new tabs to Google Slides presentations.
+ *
+ * @component
+ * @returns {JSX.Element} Grid of recent GBM meeting cards with links
+ */
 import gbmposts from "../Assets/GBMs/gbm.js";
 
 export default function Meetings() {

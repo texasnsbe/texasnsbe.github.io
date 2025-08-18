@@ -1,3 +1,13 @@
+/**
+ * HornsRaiser Component
+ *
+ * Promotes E-Week engineering community building events. Features a clickable
+ * image that links to the SNAP E-Week 2025 Slack workspace for connecting
+ * with other engineering students and organizations during Engineering Week.
+ *
+ * @component
+ * @returns {JSX.Element} E-Week promotion section with Slack invitation
+ */
 import image from "../Assets/slackimage.png";
 
 export default function HornsRaiser() {

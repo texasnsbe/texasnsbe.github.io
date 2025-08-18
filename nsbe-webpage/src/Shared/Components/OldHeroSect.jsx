@@ -1,9 +1,23 @@
-import LoopingVideo from './LoopingVideo'
+/**
+ * OldHeroSect Component
+ *
+ * Legacy hero section component that displays the main welcome message and NSBE branding.
+ * Contains the organization's motto "Excel. Succeed. Impact." and navigation to officers page.
+ * Includes a looping video component and uses custom CSS classes for styling.
+ *
+ * @component
+ * @returns {JSX.Element} Hero section with welcome message, motto, and call-to-action
+ */
+import LoopingVideo from "./LoopingVideo";
 
 export default function OldHeroSect() {
-  return ( 
-    <div className=""> {/* purple-bg pt-40 sm:pt-8 */}
-      <div className=""> {/*  mx-auto max-w-8xl py- sm:px-6 sm:py-32 lg:px-8 */}
+  return (
+    <div className="">
+      {" "}
+      {/* purple-bg pt-40 sm:pt-8 */}
+      <div className="">
+        {" "}
+        {/*  mx-auto max-w-8xl py- sm:px-6 sm:py-32 lg:px-8 */}
         <div className="hero-padding darkbg overflow-hidden border-l-8 border-orange-700  px-6 pt-16 sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
           <div className="mx-auto max-w-lg text-center lg:mx-0 lg:flex-auto lg:py-20 lg:text-left">
             <h3 className="text-lg pb-3 font-bold tracking-wider startm sm:text-xl">
@@ -26,9 +40,9 @@ export default function OldHeroSect() {
               </a>
             </div>
           </div>
-            <LoopingVideo />
+          <LoopingVideo />
         </div>
       </div>
     </div>
-  )
+  );
 }

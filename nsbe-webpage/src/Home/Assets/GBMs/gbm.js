@@ -1,3 +1,16 @@
+/**
+ * General Body Meeting (GBM) Posts
+ *
+ * Contains an array of recent NSBE General Body Meeting presentations.
+ * Each GBM object includes the meeting number, Google Slides presentation link,
+ * date, and thumbnail image. Used to display recent meetings on the home page.
+ *
+ * @constant {Array<Object>} gbmposts - Array of GBM meeting objects
+ * @property {string} title - Meeting number/identifier (e.g., "#10")
+ * @property {string} href - URL to the Google Slides presentation
+ * @property {string} date - Date of the meeting
+ * @property {string} slideImg - Imported thumbnail image for the meeting
+ */
 import gbm8 from "./GBMThumnails/8gbm.png";
 import gbm9 from "./GBMThumnails/9gbm.png";
 import gbm10 from "./GBMThumnails/10gbm.png";

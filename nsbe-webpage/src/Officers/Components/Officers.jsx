@@ -1,3 +1,14 @@
+/**
+ * Officers Component
+ *
+ * Displays the NSBE officers organized by their departments (President, Membership,
+ * Communications, Finance, Programs). Shows the top five executives prominently
+ * and lists all other officers under their respective department heads.
+ * Each officer card includes their photo, name, role, and LinkedIn profile link.
+ *
+ * @component
+ * @returns {JSX.Element} Organized display of all NSBE officers by department
+ */
 import top_v from "../Assets/Officers/top_five.js";
 import officers from "../Assets/Officers/officers.js";
 

@@ -1,3 +1,13 @@
+/**
+ * JoinSlack Component
+ *
+ * Displays the Slack community section with a clickable image that links to
+ * the NSBE Slack workspace invitation. Encourages member engagement through
+ * the organization's primary communication platform.
+ *
+ * @component
+ * @returns {JSX.Element} Slack community section with invitation link
+ */
 import slackimage from "../Assets/slackimage.png";
 
 export default function JoinSlack() {

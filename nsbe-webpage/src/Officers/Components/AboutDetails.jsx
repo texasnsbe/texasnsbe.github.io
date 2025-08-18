@@ -1,3 +1,13 @@
+/**
+ * AboutDetails Component
+ *
+ * Displays the officers page header with NSBE's mission statement and a group photo
+ * of the top executive officers. Features a responsive grid layout that stacks
+ * vertically on smaller screens and side-by-side on larger screens.
+ *
+ * @component
+ * @returns {JSX.Element} Officers page header with mission and group photo
+ */
 import topvphotos from "../Assets/Officers/New_Officer_Photos/TopV.jpg";
 
 const image = [
@@ -7,6 +17,7 @@ const image = [
     src: topvphotos,
   },
 ];
+
 export default function AboutDetails() {
   return (
     <>

@@ -1,3 +1,13 @@
+/**
+ * LoopingVideo Component
+ *
+ * Responsive video component that displays either a looping video or a fallback image
+ * based on the device screen size. On mobile devices (640px and below), shows a static
+ * image for better performance. On larger screens, displays an auto-playing looping video.
+ *
+ * @component
+ * @returns {JSX.Element} Either a video element or image element based on screen size
+ */
 import video from "../../Home/Assets/NSBEEE.mp4"; // Adjust the path to your video file
 import image from "../../Home/Assets/EventPhotos/EventImages/nsbe_jumbo.png"; // Add the path to your fallback image
 import { useMediaQuery } from "react-responsive";

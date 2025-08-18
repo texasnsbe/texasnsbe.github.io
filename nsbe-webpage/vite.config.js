@@ -1,3 +1,12 @@
+/**
+ * Vite Configuration
+ *
+ * Build configuration for the NSBE website using Vite as the bundler.
+ * Includes React plugin support, build optimizations, and ensures proper
+ * handling of static assets like the _redirects file for deployment.
+ *
+ * @see https://vitejs.dev/config/
+ */
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 

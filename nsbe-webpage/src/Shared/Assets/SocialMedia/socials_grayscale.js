@@ -1,3 +1,15 @@
+/**
+ * Social Media Links with Grayscale Icons
+ *
+ * Contains an array of NSBE's social media platforms with their grayscale icon URLs
+ * and corresponding links. These are used as shadow/background elements in the footer
+ * to create depth effects behind the colored social media icons.
+ *
+ * @constant {Array<Object>} socialImgs - Array of social media platform objects with grayscale icons
+ * @property {string} name - Name of the social media platform
+ * @property {string} img - URL to the grayscale icon image
+ * @property {string} link - URL to the NSBE's profile on that platform
+ */
 import emailLogo from "../email_logo.png";
 
 const socialImgs = [
