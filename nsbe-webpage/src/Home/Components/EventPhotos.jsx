@@ -11,49 +11,83 @@
  */
 import images from "../Assets/EventPhotos/event_photos.js";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+import OptimizedImage from "../../Shared/Components/OptimizedImage";
+import { IMAGE_PRESETS } from "../../utils/imageUtils";
+import {
+  SECTION_SPACING,
+  CONTAINERS,
+  TYPOGRAPHY,
+  ICON_SIZES,
+} from "../../styles/constants";
 
 export default function EventPhotos() {
   const slideLeft = () => {
     var slider = document.getElementById("slider");
-    slider.scrollLeft -= 500;
+    slider.scrollLeft = slider.scrollLeft - 500;
   };
 
   const slideRight = () => {
     var slider = document.getElementById("slider");
-    slider.scrollLeft += 500;
+    slider.scrollLeft = slider.scrollLeft + 500;
   };
 
   return (
-    <>
-      <div className="relative flex w-full items-center py-[7vh]">
-        <MdChevronLeft
-          className="opacity-50 cursor-pointer hover:opacity-100"
-          onClick={slideLeft}
-          size={40}
-        />
-        <div
-          id="slider"
-          className="overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide"
-        >
-          {images.map((item, index) => (
-            <img
-              key={index}
-              loading="lazy"
-              decoding="async"
-              fetchPriority="low"
-              draggable="false"
-              className="h-[18rem] w-[30rem] md:h-[18rem] max-md:w-[32rem] max-sm:h-[30vh] max-sm:w-[75vw] object-cover darkbg inline-block m-6 pointer-events-none"
-              src={item}
-              alt={`Event ${index + 1}`}
+    <div className={SECTION_SPACING.md}>
+      <div className={CONTAINERS.default}>
+        <div className="space-y-6">
+          {/* Section Header */}
+          <div className="text-center space-y-3">
+            <p
+              className={TYPOGRAPHY.subsectionTitle}
+              style={{ textTransform: "uppercase", letterSpacing: "0.08em" }}
+            >
+              CAPTURING MEMORIES!
+            </p>
+            <h2
+              className={`${TYPOGRAPHY.sectionTitle} text-white`}
+              style={{
+                fontFamily: "Rubik, sans-serif",
+                textShadow:
+                  "0.1em 0.1em 0 #000, 0.2em 0.2em 0.1em rgba(0,0,0,0.3)",
+                WebkitTextFillColor: "#ffffff",
+                textTransform: "uppercase",
+                letterSpacing: "0.06em",
+              }}
+            >
+              EVENT PHOTOS
+            </h2>
+          </div>
+
+          {/* Photo Gallery */}
+          <div className="relative flex items-center">
+            <MdChevronLeft
+              className={`${ICON_SIZES.xl} opacity-50 cursor-pointer hover:opacity-100 transition-opacity duration-200 text-white hover:text-orange-400 flex-shrink-0`}
+              onClick={slideLeft}
             />
-          ))}
+
+            <div
+              id="slider"
+              className="w-full h-full overflow-x-scroll scroll scrollbar-hide whitespace-nowrap scroll-smooth mx-4"
+            >
+              {images.map((item, index) => (
+                <OptimizedImage
+                  key={index}
+                  src={item}
+                  alt={`NSBE Event Photo ${index + 1}`}
+                  width={448}
+                  height={288}
+                  {...IMAGE_PRESETS.eventPhoto}
+                />
+              ))}
+            </div>
+
+            <MdChevronRight
+              className={`${ICON_SIZES.xl} opacity-50 cursor-pointer hover:opacity-100 transition-opacity duration-200 text-white hover:text-orange-400 flex-shrink-0`}
+              onClick={slideRight}
+            />
+          </div>
         </div>
-        <MdChevronRight
-          className="opacity-50 cursor-pointer hover:opacity-100"
-          onClick={slideRight}
-          size={40}
-        />
       </div>
-    </>
+    </div>
   );
 }

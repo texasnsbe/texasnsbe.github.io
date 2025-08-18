@@ -1,48 +1,81 @@
 /**
  * AboutDetails Component
  *
- * Displays the officers page header with NSBE's mission statement and a group photo
- * of the top executive officers. Features a responsive grid layout that stacks
- * vertically on smaller screens and side-by-side on larger screens.
- *
- * @component
- * @returns {JSX.Element} Officers page header with mission and group photo
+ * Displays the officers page header with the NSBE mission statement
+ * and a featured image. Uses a single card layout combining the mission
+ * statement with the TopV image, similar to GBM cards. Includes the
+ * OFFICERS title prominently at the top.
  */
-import topvphotos from "../Assets/Officers/New_Officer_Photos/TopV.jpg";
-
-const image = [
-  {
-    id: 1,
-    name: "TOP V Photo",
-    src: topvphotos,
-  },
-];
+import image from "../Assets/Officers/New_Officer_Photos/TopV.jpg";
+import {
+  SECTION_SPACING,
+  CONTAINERS,
+  TYPOGRAPHY,
+} from "../../styles/constants";
 
 export default function AboutDetails() {
   return (
-    <>
-      <div className="mx-[9vw]">
-        <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-y-16 lg:gap-x-16">
-          <div className="flex flex-col justify-center items-center ">
-            <h1 className="text-center herostyle tracking-tight transition-all hover:scale-102 duration-300 ease-out">
-              OFFICERS
-            </h1>
-            <p className=" lg:w-[30vw] text-center text-black text-lg border-l-8 rounded-2xl darkbg border-orange-700 p-5 bg-orange-50 tracking-wide font-medium">
-              <span className="text-xl inline-block rounded-md pl-2 pr-1 startl">
-                O
-              </span>
-              ur mission is to increase the number of culturally responsible
-              Black engineers excelling academically, succeeding professionally,
-              and positively impacting the community!
-            </p>
-          </div>
-          <img
-            src={image[0].src}
-            alt={image[0].name}
-            className=" darkbg object-cover transition-all hover:scale-110 duration-300 ease-out"
-          />
+    <div className={SECTION_SPACING.lg}>
+      {/* Officers Title Section */}
+      <div className="flex justify-center mb-12">
+        <div className="flex flex-col justify-center items-center space-y-4">
+          <h1
+            className={`${TYPOGRAPHY.hero} text-white`}
+            style={{
+              fontFamily: "Rubik, sans-serif",
+              textShadow:
+                "0.1em 0.1em 0 #000, 0.2em 0.2em 0.1em rgba(0,0,0,0.3)",
+              WebkitTextFillColor: "#ffffff",
+              letterSpacing: "0.1em",
+              textTransform: "uppercase",
+            }}
+          >
+            2024-25 OFFICERS
+          </h1>
         </div>
       </div>
-    </>
+
+      {/* Mission Statement Card */}
+      <div className={CONTAINERS.default}>
+        <div className="flex justify-center">
+          <div className="max-w-4xl w-full">
+            <article className="relative bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300 ease-out hover:scale-105 hover:shadow-2xl">
+              {/* Image Section */}
+              <div className="relative">
+                <img
+                  src={image}
+                  alt="NSBE Top Five Officers"
+                  className="w-full h-80 md:h-96 object-cover"
+                  width={800}
+                  height={400}
+                  loading="lazy"
+                  decoding="async"
+                />
+
+                {/* Mission Badge Overlay */}
+                <div className="absolute top-6 left-6 bg-orange-700 text-white rounded-xl px-6 py-3 font-bold text-lg shadow-lg">
+                  Our Mission
+                </div>
+              </div>
+
+              {/* Card Content */}
+              <div className="p-8 space-y-4">
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+                  Building Excellence in Engineering
+                </h2>
+                <p className="text-lg leading-relaxed tracking-wide font-medium text-gray-700">
+                  <span className="text-2xl text-orange-700 font-bold mr-2">
+                    Our
+                  </span>
+                  mission is to increase the number of culturally responsible
+                  Black engineers excelling academically, succeeding
+                  professionally, and positively impacting the community!
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }

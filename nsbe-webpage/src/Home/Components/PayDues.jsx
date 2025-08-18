@@ -11,54 +11,94 @@
  */
 import due_benefits from "../Assets/Dues/due_benefits.js";
 import tshirt from "../Assets/Dues/Tshirt.jpg";
+import {
+  SECTION_SPACING,
+  CONTAINERS,
+  GRID_LAYOUTS,
+  TYPOGRAPHY,
+  BUTTON_STYLES,
+  INTERACTIVE,
+  RESPONSIVE_SIZES,
+  IMAGE_STYLES,
+} from "../../styles/constants";
 
 export default function PayDues() {
   return (
-    <div className="py-[5vh]">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-          <div className="lg:pr-8 lg:pt-4">
-            <h2 className="miniheader sm:text-xl font-semibold tracking-wider leading-relaxed text-black">
-              NSBE VIP
-            </h2>
-            <p className="subheaderstyle text-gray-900 transition-all hover:scale-105 duration-300 ease-out mb-10">
-              Pay Dues
-            </p>
-            <dl className="mt-10 max-w-xl space-y-5 text-black border-l-8 rounded-2xl darkbg border-orange-700 p-7 bg-orange-50 tracking-wider leading-7 lg:max-w-none">
+    <div className={SECTION_SPACING.md}>
+      <div className={CONTAINERS.default}>
+        <div className={`${GRID_LAYOUTS.responsive2} items-center`}>
+          <div className="space-y-6">
+            <div className="space-y-4">
+              <h2
+                className={TYPOGRAPHY.subsectionTitle}
+                style={{ textTransform: "uppercase", letterSpacing: "0.08em" }}
+              >
+                NSBE VIP
+              </h2>
+              <p
+                className={`${TYPOGRAPHY.sectionTitle} text-white`}
+                style={{
+                  fontFamily: "Rubik, sans-serif",
+                  textShadow:
+                    "0.1em 0.1em 0 #000, 0.2em 0.2em 0.1em rgba(0,0,0,0.3)",
+                  WebkitTextFillColor: "#ffffff",
+                  textTransform: "uppercase",
+                  letterSpacing: "0.06em",
+                }}
+              >
+                PAY DUES
+              </p>
+            </div>
+
+            <div
+              className={`relative rounded-2xl border-l-8 border-orange-700 bg-white p-6 transition-transform duration-300 ease-out hover:scale-105 space-y-6 style-brand-shadow`}
+            >
               <p className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                 $25
               </p>
-              {due_benefits.map((feature) => (
-                <div key={feature.name} className="relative pl-9">
-                  <dt className="inline font-semibold text-black">
+
+              <div className="space-y-4">
+                {due_benefits.map((feature) => (
+                  <div
+                    key={feature.name}
+                    className="flex items-start space-x-3"
+                  >
                     <feature.icon
                       aria-hidden="true"
-                      className="absolute left-1 top-1 h-6 w-auto text-orange-700"
+                      className="h-6 w-6 text-orange-700 mt-0.5 flex-shrink-0"
                     />
-                    {feature.name}
-                  </dt>{" "}
-                  <dd className="inline text text-black">
-                    {feature.description}
-                  </dd>
-                </div>
-              ))}
+                    <div>
+                      <dt className="font-semibold text-black">
+                        {feature.name}
+                      </dt>
+                      <dd className="text-black">{feature.description}</dd>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
               <a
                 href="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc2rP4CcGY-RkZGd3M3lASSjejy1TgNu-l2nUIaqOjCXUIicw/viewform?usp=sf_link&pli=1"
-                className="block w-fit rounded-[24px] bg-orange-700 startm px-8 py-2 text-center font-semibold hover:bg-orange-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 transition-all hover:scale-105 duration-300 ease-out buttondarkbg"
+                className={`${BUTTON_STYLES.primary} btn-brand-shadow w-fit`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Pay Now
               </a>
-            </dl>
+            </div>
           </div>
-          <img
-            alt="T-shirt screenshot"
-            src={tshirt}
-            width={2432}
-            height={1442}
-            className="darkbg mt-10 w-[48rem] sm:w-[57rem] md:-ml-4 lg:-ml-0 transition-all hover:scale-105 duration-300 ease-out"
-          />
+
+          <div className="flex justify-center">
+            <img
+              alt="NSBE T-shirt screenshot"
+              src={tshirt}
+              width={2432}
+              height={1442}
+              className={`${RESPONSIVE_SIZES.heroImage.default} ${IMAGE_STYLES.heroImage} ${INTERACTIVE.hover} style-brand-shadow rounded-2xl`}
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
         </div>
       </div>
     </div>

@@ -1,0 +1,321 @@
+/**
+ * NSBE Website Design System
+ * 
+ * Centralized design tokens and component styles to ensure consistency
+ * across the entire application. This file defines reusable patterns
+ * for spacing, typography, colors, and interactions.
+ */
+
+/* =============================================================================
+   DESIGN TOKENS
+   ============================================================================= */
+
+:root {
+  /* Brand Colors */
+  --color-primary: #c2410c;      /* orange-700 */
+  --color-primary-hover: #ea580c; /* orange-600 */
+  --color-primary-light: #fed7aa; /* orange-200 */
+  --color-primary-bg: #fff7ed;    /* orange-50 */
+  
+  /* Text Colors */
+  --color-text-primary: #111827;   /* gray-900 */
+  --color-text-secondary: #374151; /* gray-700 */
+  --color-text-inverse: #ffffff;
+  
+  /* Background Colors */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f9fafb;   /* gray-50 */
+  --color-bg-overlay: rgba(0, 0, 0, 0.9);
+  
+  /* Spacing Scale (based on 4px grid) */
+  --space-xs: 0.25rem;    /* 4px */
+  --space-sm: 0.5rem;     /* 8px */
+  --space-md: 1rem;       /* 16px */
+  --space-lg: 1.5rem;     /* 24px */
+  --space-xl: 2rem;       /* 32px */
+  --space-2xl: 3rem;      /* 48px */
+  --space-3xl: 4rem;      /* 64px */
+  --space-4xl: 6rem;      /* 96px */
+  
+  /* Typography Scale */
+  --text-xs: 0.75rem;     /* 12px */
+  --text-sm: 0.875rem;    /* 14px */
+  --text-base: 1rem;      /* 16px */
+  --text-lg: 1.125rem;    /* 18px */
+  --text-xl: 1.25rem;     /* 20px */
+  --text-2xl: 1.5rem;     /* 24px */
+  --text-3xl: 1.875rem;   /* 30px */
+  --text-4xl: 2.25rem;    /* 36px */
+  --text-5xl: 3rem;       /* 48px */
+  
+  /* Border Radius */
+  --radius-sm: 0.375rem;  /* 6px */
+  --radius-md: 0.5rem;    /* 8px */
+  --radius-lg: 0.75rem;   /* 12px */
+  --radius-xl: 1rem;      /* 16px */
+  --radius-2xl: 1.5rem;   /* 24px */
+  --radius-pill: 9999px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-brand: 0.75rem 0.75rem 0 #000000;
+  
+  /* Transitions */
+  --transition-fast: 150ms ease-out;
+  --transition-normal: 250ms ease-out;
+  --transition-slow: 350ms ease-out;
+}
+
+/* =============================================================================
+   COMPONENT SYSTEM
+   ============================================================================= */
+
+/* Section Container */
+.section {
+  @apply py-12 md:py-16 lg:py-20;
+}
+
+.section-sm {
+  @apply py-8 md:py-12;
+}
+
+.section-lg {
+  @apply py-16 md:py-20 lg:py-24;
+}
+
+/* Content Container */
+.container-content {
+  @apply mx-auto max-w-7xl px-6 lg:px-8;
+}
+
+.container-narrow {
+  @apply mx-auto max-w-4xl px-6 lg:px-8;
+}
+
+/* Typography System */
+.heading-hero {
+  @apply font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl;
+  @apply tracking-tight text-center;
+  @apply transition-transform duration-300 ease-out hover:scale-105;
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-text-primary);
+  text-shadow: 0.1em 0.1em 0 #000;
+  -webkit-text-fill-color: var(--color-text-inverse);
+}
+
+.heading-section {
+  @apply font-bold text-2xl md:text-3xl lg:text-4xl;
+  @apply tracking-tight;
+  @apply transition-transform duration-300 ease-out hover:scale-105;
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-text-primary);
+  text-shadow: 0.1em 0.1em 0 #000;
+  -webkit-text-fill-color: var(--color-text-inverse);
+}
+
+.heading-subsection {
+  @apply font-semibold text-lg md:text-xl;
+  @apply tracking-wide;
+  @apply text-gray-900;
+  font-family: 'Poppins', sans-serif;
+}
+
+.text-body {
+  @apply text-base md:text-lg leading-relaxed;
+  @apply text-gray-700;
+}
+
+/* Card System */
+.card {
+  @apply relative rounded-2xl;
+  @apply border-l-8 border-orange-700;
+  @apply bg-orange-50 p-6;
+  @apply transition-transform duration-300 ease-out hover:scale-105;
+  filter: contrast(1.1) saturate(1.15);
+}
+
+.card-image {
+  @apply relative rounded-2xl;
+  @apply transition-transform duration-300 ease-out hover:scale-105;
+  border-radius: 1.5rem;
+  filter: contrast(1.1) saturate(1.15);
+}
+
+/* Button System */
+.btn-primary {
+  @apply inline-flex items-center justify-center;
+  @apply rounded-3xl px-8 py-3;
+  @apply font-semibold text-white;
+  @apply bg-orange-700 hover:bg-orange-600;
+  @apply transition-all duration-300 ease-out hover:scale-105;
+  @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: var(--shadow-sm);
+  outline: #000000 solid 0.1rem;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center;
+  @apply rounded-3xl px-8 py-3;
+  @apply font-semibold text-orange-700;
+  @apply bg-white border-2 border-orange-700;
+  @apply hover:bg-orange-50;
+  @apply transition-all duration-300 ease-out hover:scale-105;
+  @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Icon System */
+.icon-sm { @apply h-4 w-4; }
+.icon-md { @apply h-6 w-6; }
+.icon-lg { @apply h-8 w-8; }
+.icon-xl { @apply h-10 w-10; }
+
+/* Grid System */
+.grid-responsive {
+  @apply grid grid-cols-1 gap-8;
+  @apply md:grid-cols-2 md:gap-12;
+  @apply lg:gap-16;
+}
+
+.grid-responsive-3 {
+  @apply grid grid-cols-1 gap-8;
+  @apply md:grid-cols-2 md:gap-12;
+  @apply lg:grid-cols-3 lg:gap-16;
+}
+
+/* Interactive Elements */
+.interactive-hover {
+  @apply transition-all duration-300 ease-out hover:scale-105;
+}
+
+.interactive-lift {
+  @apply transition-transform duration-300 ease-out hover:scale-110;
+}
+
+/* Responsive Image */
+.image-responsive {
+  @apply w-full h-auto object-cover;
+  @apply transition-transform duration-300 ease-out hover:scale-105;
+}
+
+/* Enhanced Image Classes for Better Performance */
+.image-optimized {
+  @apply w-full h-auto object-cover;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+.image-gallery {
+  @apply object-cover transition-transform duration-300 ease-out hover:scale-105;
+  @apply pointer-events-none select-none;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: optimize-contrast;
+}
+
+.image-profile {
+  @apply object-cover transition-transform duration-300 ease-out hover:scale-105;
+  @apply select-none rounded-full;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: optimize-contrast;
+}
+
+.image-hero {
+  @apply w-full h-auto object-cover object-center;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: optimize-contrast;
+}
+
+.image-social-icon {
+  @apply object-contain transition-transform duration-300 ease-out hover:scale-110;
+  @apply select-none;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: optimize-contrast;
+}
+
+/* Navigation Specific */
+.nav-link {
+  @apply text-lg font-semibold leading-6;
+  @apply text-white hover:text-orange-400;
+  @apply transition-all duration-300 ease-out hover:scale-110;
+  @apply whitespace-nowrap;
+}
+
+.nav-mobile-link {
+  @apply w-full text-left block px-3 py-3;
+  @apply text-base font-semibold leading-7;
+  @apply text-white hover:text-orange-400;
+  @apply transition-all duration-200 ease-out hover:scale-[1.02];
+}
+
+/* Footer Specific */
+.footer-container {
+  @apply py-16 px-6 md:px-12 lg:px-16;
+  @apply text-center;
+  color: var(--color-text-primary);
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-title {
+  @apply text-4xl font-semibold mb-8;
+  text-shadow: 0.1em 0.1em 0 #000;
+  color: var(--color-text-primary);
+  -webkit-text-fill-color: var(--color-text-inverse);
+  filter: drop-shadow(0 0.35rem 0.6rem rgba(0, 0, 0, 0.25));
+}
+
+.footer-social-grid {
+  @apply flex flex-wrap justify-center mx-auto mt-8 max-w-lg;
+  @apply items-center gap-6 sm:gap-8;
+  @apply sm:max-w-xl lg:mx-0 lg:max-w-none;
+}
+
+.footer-social-icon {
+  @apply relative inline-block;
+  @apply transition-transform duration-300 ease-out group-hover:scale-125;
+  @apply h-10 w-10 sm:h-12 sm:w-12 object-contain;
+}
+
+.footer-copyright {
+  color: #f3f4f6; /* gray-500 */
+  opacity: 0.9;
+}
+
+/* Utility Classes */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Remove deprecated classes - these should be replaced */
+.darkbg {
+  /* DEPRECATED: Use .card-image instead */
+  @apply card-image;
+}
+
+.buttondarkbg {
+  /* DEPRECATED: Use .btn-primary instead */
+  @apply btn-primary;
+}
+
+.herostyle {
+  /* DEPRECATED: Use .heading-hero instead */
+  @apply heading-hero;
+}
+
+.subheaderstyle {
+  /* DEPRECATED: Use .heading-section instead */
+  @apply heading-section;
+}
+
+.miniheader {
+  /* DEPRECATED: Use .heading-subsection instead */
+  @apply heading-subsection;
+}

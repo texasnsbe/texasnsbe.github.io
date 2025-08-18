@@ -20,8 +20,12 @@ const LoopingVideo = () => {
       {isMobile ? (
         <img
           src={image}
-          alt="Event"
-          className="h-[75vh] w-[80vw] max-lg:h-[60vh] max-md:h-[50vh] max-sm:h-[35vh] max-sm:w-[90vw] object-cover rounded-xl darkbg"
+          alt="NSBE Event Highlight"
+          className="h-[75vh] w-[80vw] max-lg:h-[60vh] max-md:h-[50vh] max-sm:h-[35vh] max-sm:w-[90vw] object-cover rounded-xl card-image"
+          width={800}
+          height={600}
+          loading="eager"
+          decoding="sync"
         />
       ) : (
         <video
