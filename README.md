@@ -141,7 +141,7 @@ For technical questions or contribution guidelines:
 
 **NSBE UT Chapter**
 
-- Website: [Official NSBE UT Site]
+- Website: [Official NSBE UT Site](https://www.texasnsbe.org/)
 - Instagram: [@texasnsbe](https://www.instagram.com/texasnsbe)
 - LinkedIn: [NSBE UT](https://www.linkedin.com/company/utnsbe/)
 - Email: utnsbechair1@gmail.com
