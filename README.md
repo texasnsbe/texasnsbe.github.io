@@ -1,5 +1,7 @@
 # NSBE at the University of Texas at Austin - Development Repository
 
+- Website: [Official NSBE UT Site](https://www.texasnsbe.org/)
+
 ## Repository Overview
 
 This repository contains the complete web application for the National Society of Black Engineers (NSBE) chapter at the University of Texas at Austin. The project serves as the official digital presence for the organization, providing members and prospective members with access to events, officer information, resources, and community connections.
