@@ -333,9 +333,7 @@ html{
     }
 }
 
-/* Legacy styles - to be gradually replaced */
-.startl {
-/* DEPRECATED: Use standardized classes with 'Rubik' font instead of .startl */
+/* Legacy: Use standardized classes with 'Rubik' font instead of .startl */
 .startl {
     font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     position: relative;
