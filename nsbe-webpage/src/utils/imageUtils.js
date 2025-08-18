@@ -39,6 +39,11 @@ export const RESPONSIVE_CONFIGS = {
     className:
       "h-72 w-96 md:h-80 md:w-[26rem] lg:h-96 lg:w-[28rem] max-md:w-80 max-sm:h-64 max-sm:w-full",
   },
+  eventGallery: {
+    sizes: generateSizes({ sm: "90vw", md: "60vw", lg: "24rem", xl: "28rem" }),
+    className:
+      "h-44 w-80 sm:h-52 sm:w-96 md:h-64 md:w-[28rem] lg:h-72 lg:w-[32rem] xl:h-80 xl:w-[36rem]",
+  },
   profile: {
     sizes: generateSizes({ sm: "96px", md: "128px", lg: "160px", xl: "176px" }),
     className: "h-24 w-24 md:h-32 md:w-32 lg:h-40 lg:w-40",
@@ -117,8 +122,8 @@ export const getImageConfig = (type = "lazy", overrides = {}) => {
  */
 export const IMAGE_PRESETS = {
   eventPhoto: {
-    ...getImageConfig("gallery"),
-    className: `${RESPONSIVE_CONFIGS.gallery.className} object-cover transition-transform duration-300 ease-out hover:scale-105 pointer-events-none select-none style-brand-shadow inline-block mx-3 rounded-2xl`,
+    ...getImageConfig("eventGallery"),
+    className: `${RESPONSIVE_CONFIGS.eventGallery.className} object-cover transition-transform duration-300 ease-out hover:scale-105 pointer-events-none select-none style-brand-shadow inline-block mx-2 sm:mx-3 rounded-2xl`,
   },
   officerPhotoHead: {
     ...getImageConfig("profileExtraLarge"),
@@ -158,6 +163,7 @@ export const IMAGE_PRESETS = {
 export const optimizeDimensions = (width, height, type = "default") => {
   const aspectRatios = {
     gallery: 4 / 3,
+    eventGallery: 16 / 9,
     profile: 1,
     hero: 16 / 9,
     thumbnail: 16 / 9,

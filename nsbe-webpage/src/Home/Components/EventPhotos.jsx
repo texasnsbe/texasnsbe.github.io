@@ -23,12 +23,14 @@ import {
 export default function EventPhotos() {
   const slideLeft = () => {
     var slider = document.getElementById("slider");
-    slider.scrollLeft = slider.scrollLeft - 500;
+    const scrollAmount = window.innerWidth < 768 ? 350 : 500;
+    slider.scrollLeft = slider.scrollLeft - scrollAmount;
   };
 
   const slideRight = () => {
     var slider = document.getElementById("slider");
-    slider.scrollLeft = slider.scrollLeft + 500;
+    const scrollAmount = window.innerWidth < 768 ? 350 : 500;
+    slider.scrollLeft = slider.scrollLeft + scrollAmount;
   };
 
   return (
@@ -61,28 +63,29 @@ export default function EventPhotos() {
           {/* Photo Gallery */}
           <div className="relative flex items-center">
             <MdChevronLeft
-              className={`${ICON_SIZES.xl} opacity-50 cursor-pointer hover:opacity-100 transition-opacity duration-200 text-white hover:text-orange-400 flex-shrink-0`}
+              className={`${ICON_SIZES.xl} opacity-50 cursor-pointer hover:opacity-100 transition-opacity duration-200 text-white hover:text-orange-400 flex-shrink-0 z-10`}
               onClick={slideLeft}
             />
 
             <div
               id="slider"
-              className="w-full h-full overflow-x-scroll scroll scrollbar-hide whitespace-nowrap scroll-smooth mx-4"
+              className="w-full h-full overflow-x-scroll scroll scrollbar-hide whitespace-nowrap scroll-smooth mx-2 sm:mx-4 py-4"
             >
               {images.map((item, index) => (
                 <OptimizedImage
                   key={index}
                   src={item}
                   alt={`NSBE Event Photo ${index + 1}`}
-                  width={448}
-                  height={288}
+                  width={512}
+                  width={EVENT_PHOTO_WIDTH}
+                  height={EVENT_PHOTO_HEIGHT}
                   {...IMAGE_PRESETS.eventPhoto}
                 />
               ))}
             </div>
 
             <MdChevronRight
-              className={`${ICON_SIZES.xl} opacity-50 cursor-pointer hover:opacity-100 transition-opacity duration-200 text-white hover:text-orange-400 flex-shrink-0`}
+              className={`${ICON_SIZES.xl} opacity-50 cursor-pointer hover:opacity-100 transition-opacity duration-200 text-white hover:text-orange-400 flex-shrink-0 z-10`}
               onClick={slideRight}
             />
           </div>
